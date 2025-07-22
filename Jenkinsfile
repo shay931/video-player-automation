@@ -70,12 +70,7 @@ pipeline {
             archiveArtifacts artifacts: '*.html, *.xml', allowEmptyArchive: false
             junit 'results_*.xml'
 
-            // אפשר רק אם הפלאגין מותקן
-            publishHTML(target: [
-                reportDir: '.',
-                reportFiles: 'report_api.html,report_video.html',
-                reportName: 'HTML Test Reports'
-            ])
+           
         }
     }
 }
