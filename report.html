@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title id="head-title">report.html</title>
+      <link href="assets\style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <h1 id="title">report.html</h1>
+    <p>Report generated on 22-Jul-2025 at 10:41:27 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a>
+        v4.1.1</p>
+    <div id="environment-header">
+      <h2>Environment</h2>
+    </div>
+    <table id="environment"></table>
+    <!-- TEMPLATES -->
+      <template id="template_environment_row">
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </template>
+    <template id="template_results-table__body--empty">
+      <tbody class="results-table-row">
+        <tr id="not-found-message">
+          <td colspan="4">No results found. Check the filters.</th>
+        </tr>
+    </template>
+    <template id="template_results-table__tbody">
+      <tbody class="results-table-row">
+        <tr class="collapsible">
+        </tr>
+        <tr class="extras-row">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media">
+              <div class="media-container">
+                  <div class="media-container__nav--left"><</div>
+                  <div class="media-container__viewport">
+                    <img src="" />
+                    <video controls>
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">></div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log"></div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </template>
+    <!-- END TEMPLATES -->
+    <div class="summary">
+      <div class="summary__data">
+        <h2>Summary</h2>
+        <div class="additional-summary prefix">
+        </div>
+        <p class="run-count">31 tests took 00:03:01.</p>
+        <p class="filter">(Un)check the boxes to filter the results.</p>
+        <div class="summary__reload">
+          <div class="summary__reload__button hidden" onclick="location.reload()">
+            <div>There are still tests running. <br />Reload this page to get the latest results!</div>
+          </div>
+        </div>
+        <div class="summary__spacer"></div>
+        <div class="controls">
+          <div class="filters">
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="failed" disabled/>
+            <span class="failed">0 Failed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="passed" />
+            <span class="passed">31 Passed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="skipped" disabled/>
+            <span class="skipped">0 Skipped,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xfailed" disabled/>
+            <span class="xfailed">0 Expected failures,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xpassed" disabled/>
+            <span class="xpassed">0 Unexpected passes,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="error" disabled/>
+            <span class="error">0 Errors,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="rerun" disabled/>
+            <span class="rerun">0 Reruns</span>
+          </div>
+          <div class="collapse">
+            <button id="show_all_details">Show all details</button>&nbsp;/&nbsp;<button id="hide_all_details">Hide all details</button>
+          </div>
+        </div>
+      </div>
+      <div class="additional-summary summary">
+      </div>
+      <div class="additional-summary postfix">
+      </div>
+    </div>
+    <table id="results-table">
+      <thead id="results-table-head">
+        <tr>
+          <th class="sortable" data-column-type="result">Result</th>
+          <th class="sortable" data-column-type="testId">Test</th>
+          <th class="sortable" data-column-type="duration">Duration</th>
+          <th>Links</th>
+        </tr>
+      </thead>
+    </table>
+  </body>
+  <footer>
+    <div id="data-container" data-jsonblob="{&#34;environment&#34;: {&#34;Python&#34;: &#34;3.12.10&#34;, &#34;Platform&#34;: &#34;Windows-11-10.0.26100-SP0&#34;, &#34;Packages&#34;: {&#34;pytest&#34;: &#34;7.4.3&#34;, &#34;pluggy&#34;: &#34;1.6.0&#34;}, &#34;Plugins&#34;: {&#34;html&#34;: &#34;4.1.1&#34;, &#34;metadata&#34;: &#34;3.1.1&#34;, &#34;xdist&#34;: &#34;3.5.0&#34;}, &#34;CI&#34;: &#34;true&#34;, &#34;BUILD_NUMBER&#34;: &#34;13&#34;, &#34;BUILD_ID&#34;: &#34;13&#34;, &#34;BUILD_URL&#34;: &#34;http://localhost:8080/job/video-player-automation/13/&#34;, &#34;NODE_NAME&#34;: &#34;built-in&#34;, &#34;JOB_NAME&#34;: &#34;video-player-automation&#34;, &#34;BUILD_TAG&#34;: &#34;jenkins-video-player-automation-13&#34;, &#34;EXECUTOR_NUMBER&#34;: &#34;0&#34;, &#34;JENKINS_URL&#34;: &#34;http://localhost:8080/&#34;, &#34;WORKSPACE&#34;: &#34;C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\video-player-automation&#34;}, &#34;tests&#34;: {&#34;tests/test_api_negative.py::TestAPINegative::test_missing_user_id&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_api_negative.py::TestAPINegative::test_missing_user_id&#34;, &#34;duration&#34;: &#34;115 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_api_negative.py::TestAPINegative::test_missing_user_id&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;115 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stderr call -----------------------------\n2025-07-22 10:37:52,852 - INFO - Step 1: Create event without userId\n2025-07-22 10:37:52,852 - INFO - Step 2: Send invalid event\n2025-07-22 10:37:52,957 - INFO - Step 3: Validate server response\n2025-07-22 10:37:52,957 - WARNING -    Server accepts missing userId: 200\n\n------------------------------ Captured log call -------------------------------\nINFO     tests.conftest:test_api_negative.py:21 Step 1: Create event without userId\nINFO     tests.conftest:test_api_negative.py:28 Step 2: Send invalid event\nINFO     tests.conftest:test_api_negative.py:31 Step 3: Validate server response\nWARNING  tests.conftest:test_api_negative.py:34    Server accepts missing userId: 200\n\n&#34;}], &#34;tests/test_api_negative.py::TestAPINegative::test_missing_type&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_api_negative.py::TestAPINegative::test_missing_type&#34;, &#34;duration&#34;: &#34;35 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_api_negative.py::TestAPINegative::test_missing_type&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;35 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stderr call -----------------------------\n2025-07-22 10:37:53,003 - INFO - Step 1: Create event without type\n2025-07-22 10:37:53,003 - INFO - Step 2: Send and validate\n2025-07-22 10:37:53,030 - WARNING -    Missing type response: 200\n\n------------------------------ Captured log call -------------------------------\nINFO     tests.conftest:test_api_negative.py:38 Step 1: Create event without type\nINFO     tests.conftest:test_api_negative.py:45 Step 2: Send and validate\nWARNING  tests.conftest:test_api_negative.py:47    Missing type response: 200\n\n&#34;}], &#34;tests/test_api_negative.py::TestAPINegative::test_missing_video_time&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_api_negative.py::TestAPINegative::test_missing_video_time&#34;, &#34;duration&#34;: &#34;28 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_api_negative.py::TestAPINegative::test_missing_video_time&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;28 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stderr call -----------------------------\n2025-07-22 10:37:53,044 - INFO - Testing missing videoTime\n2025-07-22 10:37:53,060 - WARNING -    Missing videoTime response: 200\n\n------------------------------ Captured log call -------------------------------\nINFO     tests.conftest:test_api_negative.py:51 Testing missing videoTime\nWARNING  tests.conftest:test_api_negative.py:59    Missing videoTime response: 200\n\n&#34;}], &#34;tests/test_api_negative.py::TestAPINegative::test_missing_timestamp&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_api_negative.py::TestAPINegative::test_missing_timestamp&#34;, &#34;duration&#34;: &#34;22 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_api_negative.py::TestAPINegative::test_missing_timestamp&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;22 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stderr call -----------------------------\n2025-07-22 10:37:53,072 - INFO - Testing missing timestamp\n2025-07-22 10:37:53,092 - WARNING -    Missing timestamp response: 200\n\n------------------------------ Captured log call -------------------------------\nINFO     tests.conftest:test_api_negative.py:63 Testing missing timestamp\nWARNING  tests.conftest:test_api_negative.py:71    Missing timestamp response: 200\n\n&#34;}], &#34;tests/test_api_negative.py::TestAPINegative::test_empty_payload&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_api_negative.py::TestAPINegative::test_empty_payload&#34;, &#34;duration&#34;: &#34;14 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_api_negative.py::TestAPINegative::test_empty_payload&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;14 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stderr call -----------------------------\n2025-07-22 10:37:53,098 - INFO - Testing empty payload\n2025-07-22 10:37:53,108 - WARNING -    Empty payload response: 200\n\n------------------------------ Captured log call -------------------------------\nINFO     tests.conftest:test_api_negative.py:75 Testing empty payload\nWARNING  tests.conftest:test_api_negative.py:77    Empty payload response: 200\n\n&#34;}], &#34;tests/test_api_negative.py::TestAPINegative::test_null_values&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_api_negative.py::TestAPINegative::test_null_values&#34;, &#34;duration&#34;: &#34;13 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_api_negative.py::TestAPINegative::test_null_values&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;13 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stderr call -----------------------------\n2025-07-22 10:37:53,108 - INFO - Testing null values\n2025-07-22 10:37:53,119 - WARNING -    Null values response: 200\n\n------------------------------ Captured log call -------------------------------\nINFO     tests.conftest:test_api_negative.py:81 Testing null values\nWARNING  tests.conftest:test_api_negative.py:90    Null values response: 200\n\n&#34;}], &#34;tests/test_api_negative.py::TestAPINegative::test_wrong_type_video_time&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_api_negative.py::TestAPINegative::test_wrong_type_video_time&#34;, &#34;duration&#34;: &#34;13 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_api_negative.py::TestAPINegative::test_wrong_type_video_time&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;13 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stderr call -----------------------------\n2025-07-22 10:37:53,128 - INFO - Testing wrong type for videoTime\n2025-07-22 10:37:53,137 - WARNING -    Wrong videoTime type response: 200\n\n------------------------------ Captured log call -------------------------------\nINFO     tests.conftest:test_api_negative.py:94 Testing wrong type for videoTime\nWARNING  tests.conftest:test_api_negative.py:103    Wrong videoTime type response: 200\n\n&#34;}], &#34;tests/test_api_negative.py::TestAPINegative::test_negative_video_time&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_api_negative.py::TestAPINegative::test_negative_video_time&#34;, &#34;duration&#34;: &#34;12 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_api_negative.py::TestAPINegative::test_negative_video_time&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;12 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stderr call -----------------------------\n2025-07-22 10:37:53,144 - INFO - Testing negative videoTime\n2025-07-22 10:37:53,152 - WARNING -    Negative videoTime response: 200\n\n------------------------------ Captured log call -------------------------------\nINFO     tests.conftest:test_api_negative.py:107 Testing negative videoTime\nWARNING  tests.conftest:test_api_negative.py:116    Negative videoTime response: 200\n\n&#34;}], &#34;tests/test_api_negative.py::TestAPINegative::test_invalid_event_type&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_api_negative.py::TestAPINegative::test_invalid_event_type&#34;, &#34;duration&#34;: &#34;27 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_api_negative.py::TestAPINegative::test_invalid_event_type&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;27 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stderr call -----------------------------\n2025-07-22 10:37:53,152 - INFO - Testing invalid event type\n2025-07-22 10:37:53,172 - WARNING -    Invalid event type response: 200\n\n------------------------------ Captured log call -------------------------------\nINFO     tests.conftest:test_api_negative.py:120 Testing invalid event type\nWARNING  tests.conftest:test_api_negative.py:129    Invalid event type response: 200\n\n&#34;}], &#34;tests/test_api_negative.py::TestAPINegative::test_malformed_timestamp&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_api_negative.py::TestAPINegative::test_malformed_timestamp&#34;, &#34;duration&#34;: &#34;17 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_api_negative.py::TestAPINegative::test_malformed_timestamp&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;17 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stderr call -----------------------------\n2025-07-22 10:37:53,189 - INFO - Testing malformed timestamp\n2025-07-22 10:37:53,203 - WARNING -    Malformed timestamp response: 200\n\n------------------------------ Captured log call -------------------------------\nINFO     tests.conftest:test_api_negative.py:133 Testing malformed timestamp\nWARNING  tests.conftest:test_api_negative.py:142    Malformed timestamp response: 200\n\n&#34;}], &#34;tests/test_api_negative.py::TestAPINegative::test_extra_fields&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_api_negative.py::TestAPINegative::test_extra_fields&#34;, &#34;duration&#34;: &#34;21 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_api_negative.py::TestAPINegative::test_extra_fields&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;21 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stderr call -----------------------------\n2025-07-22 10:37:53,203 - INFO - Testing extra fields\n2025-07-22 10:37:53,227 - INFO -    Extra fields response: 200\n2025-07-22 10:37:53,228 - INFO -    Server accepts extra fields: True\n\n------------------------------ Captured log call -------------------------------\nINFO     tests.conftest:test_api_negative.py:146 Testing extra fields\nINFO     tests.conftest:test_api_negative.py:157    Extra fields response: 200\nINFO     tests.conftest:test_api_negative.py:158    Server accepts extra fields: True\n\n&#34;}], &#34;tests/test_api_negative.py::TestAPINegative::test_wrong_content_type&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_api_negative.py::TestAPINegative::test_wrong_content_type&#34;, &#34;duration&#34;: &#34;21 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_api_negative.py::TestAPINegative::test_wrong_content_type&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;21 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stderr call -----------------------------\n2025-07-22 10:37:53,238 - INFO - Testing wrong content type\n2025-07-22 10:37:53,254 - WARNING -    Wrong content type response: 200\n\n------------------------------ Captured log call -------------------------------\nINFO     tests.conftest:test_api_negative.py:162 Testing wrong content type\nWARNING  tests.conftest:test_api_negative.py:170    Wrong content type response: 200\n\n&#34;}], &#34;tests/test_api_negative.py::TestAPINegative::test_malformed_json&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_api_negative.py::TestAPINegative::test_malformed_json&#34;, &#34;duration&#34;: &#34;37 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_api_negative.py::TestAPINegative::test_malformed_json&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;37 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stderr call -----------------------------\n2025-07-22 10:37:53,262 - INFO - Testing malformed JSON\n2025-07-22 10:37:53,293 - ERROR -    Malformed JSON response: 400\n\n------------------------------ Captured log call -------------------------------\nINFO     tests.conftest:test_api_negative.py:174 Testing malformed JSON\nERROR    tests.conftest:test_api_negative.py:182    Malformed JSON response: 400\n\n&#34;}], &#34;tests/test_api_negative.py::TestAPINegative::test_huge_payload&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_api_negative.py::TestAPINegative::test_huge_payload&#34;, &#34;duration&#34;: &#34;24 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_api_negative.py::TestAPINegative::test_huge_payload&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;24 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stderr call -----------------------------\n2025-07-22 10:37:53,305 - INFO - Testing huge payload\n2025-07-22 10:37:53,325 - WARNING -    Huge payload response: 200\n\n------------------------------ Captured log call -------------------------------\nINFO     tests.conftest:test_api_negative.py:186 Testing huge payload\nWARNING  tests.conftest:test_api_negative.py:196    Huge payload response: 200\n\n&#34;}], &#34;tests/test_api_negative.py::TestAPINegative::test_special_characters&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_api_negative.py::TestAPINegative::test_special_characters&#34;, &#34;duration&#34;: &#34;15 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_api_negative.py::TestAPINegative::test_special_characters&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;15 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stderr call -----------------------------\n2025-07-22 10:37:53,334 - INFO - Testing special characters\n2025-07-22 10:37:53,345 - INFO -    Special characters response: 200\n2025-07-22 10:37:53,345 - INFO -    \u2705 Server handles special characters safely\n\n------------------------------ Captured log call -------------------------------\nINFO     tests.conftest:test_api_negative.py:200 Testing special characters\nINFO     tests.conftest:test_api_negative.py:210    Special characters response: 200\nINFO     tests.conftest:test_api_negative.py:211    \u2705 Server handles special characters safely\n\n&#34;}], &#34;tests/test_api_positive.py::TestAPIPositive::test_send_play_event&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_api_positive.py::TestAPIPositive::test_send_play_event&#34;, &#34;duration&#34;: &#34;13 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_api_positive.py::TestAPIPositive::test_send_play_event&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;13 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stderr call -----------------------------\n2025-07-22 10:37:53,350 - INFO - Step 1: Prepare play event data\n2025-07-22 10:37:53,350 - INFO - Step 2: Send play event to API\n2025-07-22 10:37:53,359 - INFO - Step 3: Validate response status\n2025-07-22 10:37:53,359 - INFO -    \u2705 Status code: 200\n2025-07-22 10:37:53,359 - INFO - Step 4: Validate response body\n2025-07-22 10:37:53,361 - INFO -    \u2705 Response body: {&amp;#x27;ok&amp;#x27;: True}\n\n------------------------------ Captured log call -------------------------------\nINFO     tests.conftest:test_api_positive.py:21 Step 1: Prepare play event data\nINFO     tests.conftest:test_api_positive.py:23 Step 2: Send play event to API\nINFO     tests.conftest:test_api_positive.py:29 Step 3: Validate response status\nINFO     tests.conftest:test_api_positive.py:31    \u2705 Status code: 200\nINFO     tests.conftest:test_api_positive.py:33 Step 4: Validate response body\nINFO     tests.conftest:test_api_positive.py:36    \u2705 Response body: {&amp;#x27;ok&amp;#x27;: True}\n\n&#34;}], &#34;tests/test_api_positive.py::TestAPIPositive::test_send_pause_event&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_api_positive.py::TestAPIPositive::test_send_pause_event&#34;, &#34;duration&#34;: &#34;11 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_api_positive.py::TestAPIPositive::test_send_pause_event&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;11 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stderr call -----------------------------\n2025-07-22 10:37:53,362 - INFO - Step 1: Send pause event\n2025-07-22 10:37:53,371 - INFO - Step 2: Validate response\n2025-07-22 10:37:53,371 - INFO -    \u2705 Pause event sent successfully: {&amp;#x27;ok&amp;#x27;: True}\n\n------------------------------ Captured log call -------------------------------\nINFO     tests.conftest:test_api_positive.py:40 Step 1: Send pause event\nINFO     tests.conftest:test_api_positive.py:46 Step 2: Validate response\nINFO     tests.conftest:test_api_positive.py:50    \u2705 Pause event sent successfully: {&amp;#x27;ok&amp;#x27;: True}\n\n&#34;}], &#34;tests/test_api_positive.py::TestAPIPositive::test_send_seeked_event&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_api_positive.py::TestAPIPositive::test_send_seeked_event&#34;, &#34;duration&#34;: &#34;14 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_api_positive.py::TestAPIPositive::test_send_seeked_event&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;14 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stderr call -----------------------------\n2025-07-22 10:37:53,377 - INFO - Step 1: Send seeked event\n2025-07-22 10:37:53,388 - INFO - Step 2: Validate response\n2025-07-22 10:37:53,388 - INFO -    \u2705 Seeked event sent successfully: {&amp;#x27;ok&amp;#x27;: True}\n\n------------------------------ Captured log call -------------------------------\nINFO     tests.conftest:test_api_positive.py:54 Step 1: Send seeked event\nINFO     tests.conftest:test_api_positive.py:60 Step 2: Validate response\nINFO     tests.conftest:test_api_positive.py:64    \u2705 Seeked event sent successfully: {&amp;#x27;ok&amp;#x27;: True}\n\n&#34;}], &#34;tests/test_api_positive.py::TestAPIPositive::test_send_scroll_event&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_api_positive.py::TestAPIPositive::test_send_scroll_event&#34;, &#34;duration&#34;: &#34;10 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_api_positive.py::TestAPIPositive::test_send_scroll_event&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;10 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stderr call -----------------------------\n2025-07-22 10:37:53,393 - INFO - Step 1: Send scroll event\n2025-07-22 10:37:53,401 - INFO - Step 2: Validate response\n2025-07-22 10:37:53,403 - INFO -    \u2705 Scroll event sent successfully: {&amp;#x27;ok&amp;#x27;: True}\n\n------------------------------ Captured log call -------------------------------\nINFO     tests.conftest:test_api_positive.py:68 Step 1: Send scroll event\nINFO     tests.conftest:test_api_positive.py:74 Step 2: Validate response\nINFO     tests.conftest:test_api_positive.py:78    \u2705 Scroll event sent successfully: {&amp;#x27;ok&amp;#x27;: True}\n\n&#34;}], &#34;tests/test_api_positive.py::TestAPIPositive::test_all_required_fields&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_api_positive.py::TestAPIPositive::test_all_required_fields&#34;, &#34;duration&#34;: &#34;9 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_api_positive.py::TestAPIPositive::test_all_required_fields&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;9 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stderr call -----------------------------\n2025-07-22 10:37:53,403 - INFO - Step 1: Create complete event structure\n2025-07-22 10:37:53,403 - INFO -    Event data: {&amp;#x27;userId&amp;#x27;: &amp;#x27;user-123&amp;#x27;, &amp;#x27;type&amp;#x27;: &amp;#x27;play&amp;#x27;, &amp;#x27;videoTime&amp;#x27;: 12.345, &amp;#x27;timestamp&amp;#x27;: &amp;#x27;2025-07-21T19:30:45.123Z&amp;#x27;}\n2025-07-22 10:37:53,403 - INFO - Step 2: Send event\n2025-07-22 10:37:53,403 - INFO - Step 3: Validate response\n2025-07-22 10:37:53,403 - INFO -    \u2705 Complete event accepted: {&amp;#x27;ok&amp;#x27;: True}\n\n------------------------------ Captured log call -------------------------------\nINFO     tests.conftest:test_api_positive.py:82 Step 1: Create complete event structure\nINFO     tests.conftest:test_api_positive.py:89    Event data: {&amp;#x27;userId&amp;#x27;: &amp;#x27;user-123&amp;#x27;, &amp;#x27;type&amp;#x27;: &amp;#x27;play&amp;#x27;, &amp;#x27;videoTime&amp;#x27;: 12.345, &amp;#x27;timestamp&amp;#x27;: &amp;#x27;2025-07-21T19:30:45.123Z&amp;#x27;}\nINFO     tests.conftest:test_api_positive.py:91 Step 2: Send event\nINFO     tests.conftest:test_api_positive.py:94 Step 3: Validate response\nINFO     tests.conftest:test_api_positive.py:98    \u2705 Complete event accepted: {&amp;#x27;ok&amp;#x27;: True}\n\n&#34;}], &#34;tests/test_api_positive.py::TestAPIPositive::test_different_user_ids&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_api_positive.py::TestAPIPositive::test_different_user_ids&#34;, &#34;duration&#34;: &#34;30 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_api_positive.py::TestAPIPositive::test_different_user_ids&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;30 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stderr call -----------------------------\n2025-07-22 10:37:53,419 - INFO - Step 1: Test multiple user IDs\n2025-07-22 10:37:53,419 - INFO -    1. Testing user: user-123\n2025-07-22 10:37:53,422 - INFO -       \u2705 Event sent successfully for user-123\n2025-07-22 10:37:53,422 - INFO -    2. Testing user: user-456\n2025-07-22 10:37:53,436 - INFO -       \u2705 Event sent successfully for user-456\n2025-07-22 10:37:53,436 - INFO -    3. Testing user: test-user\n2025-07-22 10:37:53,436 - INFO -       \u2705 Event sent successfully for test-user\n2025-07-22 10:37:53,436 - INFO -    4. Testing user: admin\n2025-07-22 10:37:53,436 - INFO -       \u2705 Event sent successfully for admin\n\n------------------------------ Captured log call -------------------------------\nINFO     tests.conftest:test_api_positive.py:102 Step 1: Test multiple user IDs\nINFO     tests.conftest:test_api_positive.py:106    1. Testing user: user-123\nINFO     tests.conftest:test_api_positive.py:114       \u2705 Event sent successfully for user-123\nINFO     tests.conftest:test_api_positive.py:106    2. Testing user: user-456\nINFO     tests.conftest:test_api_positive.py:114       \u2705 Event sent successfully for user-456\nINFO     tests.conftest:test_api_positive.py:106    3. Testing user: test-user\nINFO     tests.conftest:test_api_positive.py:114       \u2705 Event sent successfully for test-user\nINFO     tests.conftest:test_api_positive.py:106    4. Testing user: admin\nINFO     tests.conftest:test_api_positive.py:114       \u2705 Event sent successfully for admin\n\n&#34;}], &#34;tests/test_api_positive.py::TestAPIPositive::test_various_video_times&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_api_positive.py::TestAPIPositive::test_various_video_times&#34;, &#34;duration&#34;: &#34;75 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_api_positive.py::TestAPIPositive::test_various_video_times&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;75 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stderr call -----------------------------\n2025-07-22 10:37:53,452 - INFO - Step 1: Test various video times\n2025-07-22 10:37:53,452 - INFO -    1. Testing time: 0.0s\n2025-07-22 10:37:53,468 - INFO -       \u2705 Event sent with time 0.0s\n2025-07-22 10:37:53,471 - INFO -    2. Testing time: 0.5s\n2025-07-22 10:37:53,480 - INFO -       \u2705 Event sent with time 0.5s\n2025-07-22 10:37:53,480 - INFO -    3. Testing time: 10.0s\n2025-07-22 10:37:53,491 - INFO -       \u2705 Event sent with time 10.0s\n2025-07-22 10:37:53,493 - INFO -    4. Testing time: 59.999s\n2025-07-22 10:37:53,503 - INFO -       \u2705 Event sent with time 59.999s\n2025-07-22 10:37:53,503 - INFO -    5. Testing time: 120.5s\n2025-07-22 10:37:53,513 - INFO -       \u2705 Event sent with time 120.5s\n2025-07-22 10:37:53,513 - INFO -    6. Testing time: 3600.0s\n2025-07-22 10:37:53,524 - INFO -       \u2705 Event sent with time 3600.0s\n\n------------------------------ Captured log call -------------------------------\nINFO     tests.conftest:test_api_positive.py:118 Step 1: Test various video times\nINFO     tests.conftest:test_api_positive.py:122    1. Testing time: 0.0s\nINFO     tests.conftest:test_api_positive.py:129       \u2705 Event sent with time 0.0s\nINFO     tests.conftest:test_api_positive.py:122    2. Testing time: 0.5s\nINFO     tests.conftest:test_api_positive.py:129       \u2705 Event sent with time 0.5s\nINFO     tests.conftest:test_api_positive.py:122    3. Testing time: 10.0s\nINFO     tests.conftest:test_api_positive.py:129       \u2705 Event sent with time 10.0s\nINFO     tests.conftest:test_api_positive.py:122    4. Testing time: 59.999s\nINFO     tests.conftest:test_api_positive.py:129       \u2705 Event sent with time 59.999s\nINFO     tests.conftest:test_api_positive.py:122    5. Testing time: 120.5s\nINFO     tests.conftest:test_api_positive.py:129       \u2705 Event sent with time 120.5s\nINFO     tests.conftest:test_api_positive.py:122    6. Testing time: 3600.0s\nINFO     tests.conftest:test_api_positive.py:129       \u2705 Event sent with time 3600.0s\n\n&#34;}], &#34;tests/test_api_positive.py::TestAPIPositive::test_rapid_events&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_api_positive.py::TestAPIPositive::test_rapid_events&#34;, &#34;duration&#34;: &#34;89 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_api_positive.py::TestAPIPositive::test_rapid_events&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;89 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stderr call -----------------------------\n2025-07-22 10:37:53,536 - INFO - Step 1: Send 10 events rapidly\n2025-07-22 10:37:53,619 - INFO - Step 2: Validate all events sent\n2025-07-22 10:37:53,619 - INFO -    \u2705 All 10 events sent successfully\n\n------------------------------ Captured log call -------------------------------\nINFO     tests.conftest:test_api_positive.py:133 Step 1: Send 10 events rapidly\nINFO     tests.conftest:test_api_positive.py:145 Step 2: Validate all events sent\nINFO     tests.conftest:test_api_positive.py:147    \u2705 All 10 events sent successfully\n\n&#34;}], &#34;tests/test_video.py::TestVideoPlayer::test_play_button[chrome]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_video.py::TestVideoPlayer::test_play_button[chrome]&#34;, &#34;duration&#34;: &#34;00:00:15&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_video.py::TestVideoPlayer::test_play_button[chrome]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:15&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;---------------------------- Captured stderr setup -----------------------------\n2025-07-22 10:37:53,629 - INFO - Setting up Chrome driver...\n2025-07-22 10:37:53,629 - INFO - ====== WebDriver manager ======\n2025-07-22 10:37:57,086 - INFO - Get LATEST chromedriver version for google-chrome\n2025-07-22 10:37:59,465 - INFO - Get LATEST chromedriver version for google-chrome\n2025-07-22 10:38:01,763 - INFO - Driver [C:\\WINDOWS\\system32\\config\\systemprofile\\.wdm\\drivers\\chromedriver\\win64\\138.0.7204.157\\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache\n2025-07-22 10:38:01,766 - INFO - Chrome driver path: C:\\WINDOWS\\system32\\config\\systemprofile\\.wdm\\drivers\\chromedriver\\win64\\138.0.7204.157\\chromedriver-win32/chromedriver.exe\n\n------------------------------ Captured log setup ------------------------------\nINFO     tests.test_video:test_video.py:27 Setting up Chrome driver...\nINFO     WDM:logger.py:11 ====== WebDriver manager ======\nINFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome\nINFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome\nINFO     WDM:logger.py:11 Driver [C:\\WINDOWS\\system32\\config\\systemprofile\\.wdm\\drivers\\chromedriver\\win64\\138.0.7204.157\\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache\nINFO     tests.test_video:test_video.py:36 Chrome driver path: C:\\WINDOWS\\system32\\config\\systemprofile\\.wdm\\drivers\\chromedriver\\win64\\138.0.7204.157\\chromedriver-win32/chromedriver.exe\n\n----------------------------- Captured stderr call -----------------------------\n2025-07-22 10:38:04,999 - INFO - [CHROME] Step 1: Click play button\n2025-07-22 10:38:05,541 - INFO - [CHROME] Step 2: Wait for event to be sent\n2025-07-22 10:38:06,542 - INFO - [CHROME] Step 3: Verify video is playing\n2025-07-22 10:38:06,584 - INFO - [CHROME] \u2705 Video is playing: True\n2025-07-22 10:38:06,585 - INFO - [CHROME] Step 4: Check play events\n2025-07-22 10:38:06,619 - INFO - [CHROME] \u2705 Found 1 play events\n2025-07-22 10:38:06,620 - INFO - [CHROME] Step 5: Validate event structure\n2025-07-22 10:38:06,620 - INFO - [CHROME] \u2705 Event structure valid: {&amp;#x27;timestamp&amp;#x27;: &amp;#x27;2025-07-22T07:38:05.020Z&amp;#x27;, &amp;#x27;type&amp;#x27;: &amp;#x27;play&amp;#x27;, &amp;#x27;userId&amp;#x27;: &amp;#x27;user-123&amp;#x27;, &amp;#x27;videoTime&amp;#x27;: 0}\n\n------------------------------ Captured log call -------------------------------\nINFO     tests.test_video:test_video.py:145 [CHROME] Step 1: Click play button\nINFO     tests.test_video:test_video.py:148 [CHROME] Step 2: Wait for event to be sent\nINFO     tests.test_video:test_video.py:151 [CHROME] Step 3: Verify video is playing\nINFO     tests.test_video:test_video.py:154 [CHROME] \u2705 Video is playing: True\nINFO     tests.test_video:test_video.py:156 [CHROME] Step 4: Check play events\nINFO     tests.test_video:test_video.py:159 [CHROME] \u2705 Found 1 play events\nINFO     tests.test_video:test_video.py:161 [CHROME] Step 5: Validate event structure\nINFO     tests.test_video:test_video.py:167 [CHROME] \u2705 Event structure valid: {&amp;#x27;timestamp&amp;#x27;: &amp;#x27;2025-07-22T07:38:05.020Z&amp;#x27;, &amp;#x27;type&amp;#x27;: &amp;#x27;play&amp;#x27;, &amp;#x27;userId&amp;#x27;: &amp;#x27;user-123&amp;#x27;, &amp;#x27;videoTime&amp;#x27;: 0}\n\n--------------------------- Captured stderr teardown ---------------------------\n2025-07-22 10:38:06,624 - INFO - Closing chrome driver...\n\n---------------------------- Captured log teardown -----------------------------\nINFO     tests.test_video:test_video.py:119 Closing chrome driver...&#34;}], &#34;tests/test_video.py::TestVideoPlayer::test_play_button[firefox]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_video.py::TestVideoPlayer::test_play_button[firefox]&#34;, &#34;duration&#34;: &#34;00:00:37&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_video.py::TestVideoPlayer::test_play_button[firefox]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:37&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;---------------------------- Captured stderr setup -----------------------------\n2025-07-22 10:38:12,965 - INFO - Setting up Firefox driver...\n2025-07-22 10:38:12,967 - INFO - Found Firefox at: C:\\Program Files\\Mozilla Firefox\\firefox.exe\n2025-07-22 10:38:12,967 - INFO - ====== WebDriver manager ======\n2025-07-22 10:38:24,249 - INFO - Get LATEST geckodriver version for 140.0 firefox\n2025-07-22 10:38:25,783 - INFO - Get LATEST geckodriver version for 140.0 firefox\n2025-07-22 10:38:27,255 - INFO - Driver [C:\\WINDOWS\\system32\\config\\systemprofile\\.wdm\\drivers\\geckodriver\\win64\\v0.36.0\\geckodriver.exe] found in cache\n\n------------------------------ Captured log setup ------------------------------\nINFO     tests.test_video:test_video.py:49 Setting up Firefox driver...\nINFO     tests.test_video:test_video.py:62 Found Firefox at: C:\\Program Files\\Mozilla Firefox\\firefox.exe\nINFO     WDM:logger.py:11 ====== WebDriver manager ======\nINFO     WDM:logger.py:11 Get LATEST geckodriver version for 140.0 firefox\nINFO     WDM:logger.py:11 Get LATEST geckodriver version for 140.0 firefox\nINFO     WDM:logger.py:11 Driver [C:\\WINDOWS\\system32\\config\\systemprofile\\.wdm\\drivers\\geckodriver\\win64\\v0.36.0\\geckodriver.exe] found in cache\n\n----------------------------- Captured stderr call -----------------------------\n2025-07-22 10:38:44,056 - INFO - [FIREFOX] Step 1: Click play button\n2025-07-22 10:38:44,569 - INFO - [FIREFOX] Step 2: Wait for event to be sent\n2025-07-22 10:38:45,570 - INFO - [FIREFOX] Step 3: Verify video is playing\n2025-07-22 10:38:45,578 - INFO - [FIREFOX] \u2705 Video is playing: True\n2025-07-22 10:38:45,578 - INFO - [FIREFOX] Step 4: Check play events\n2025-07-22 10:38:45,586 - INFO - [FIREFOX] \u2705 Found 1 play events\n2025-07-22 10:38:45,586 - INFO - [FIREFOX] Step 5: Validate event structure\n2025-07-22 10:38:45,586 - INFO - [FIREFOX] \u2705 Event structure valid: {&amp;#x27;timestamp&amp;#x27;: &amp;#x27;2025-07-22T07:38:44.065Z&amp;#x27;, &amp;#x27;type&amp;#x27;: &amp;#x27;play&amp;#x27;, &amp;#x27;userId&amp;#x27;: &amp;#x27;user-123&amp;#x27;, &amp;#x27;videoTime&amp;#x27;: 0}\n\n------------------------------ Captured log call -------------------------------\nINFO     tests.test_video:test_video.py:145 [FIREFOX] Step 1: Click play button\nINFO     tests.test_video:test_video.py:148 [FIREFOX] Step 2: Wait for event to be sent\nINFO     tests.test_video:test_video.py:151 [FIREFOX] Step 3: Verify video is playing\nINFO     tests.test_video:test_video.py:154 [FIREFOX] \u2705 Video is playing: True\nINFO     tests.test_video:test_video.py:156 [FIREFOX] Step 4: Check play events\nINFO     tests.test_video:test_video.py:159 [FIREFOX] \u2705 Found 1 play events\nINFO     tests.test_video:test_video.py:161 [FIREFOX] Step 5: Validate event structure\nINFO     tests.test_video:test_video.py:167 [FIREFOX] \u2705 Event structure valid: {&amp;#x27;timestamp&amp;#x27;: &amp;#x27;2025-07-22T07:38:44.065Z&amp;#x27;, &amp;#x27;type&amp;#x27;: &amp;#x27;play&amp;#x27;, &amp;#x27;userId&amp;#x27;: &amp;#x27;user-123&amp;#x27;, &amp;#x27;videoTime&amp;#x27;: 0}\n\n--------------------------- Captured stderr teardown ---------------------------\n2025-07-22 10:38:45,588 - INFO - Closing firefox driver...\n\n---------------------------- Captured log teardown -----------------------------\nINFO     tests.test_video:test_video.py:119 Closing firefox driver...&#34;}], &#34;tests/test_video.py::TestVideoPlayer::test_pause_button[chrome]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_video.py::TestVideoPlayer::test_pause_button[chrome]&#34;, &#34;duration&#34;: &#34;00:00:14&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_video.py::TestVideoPlayer::test_pause_button[chrome]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:14&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;---------------------------- Captured stderr setup -----------------------------\n2025-07-22 10:38:53,732 - INFO - Setting up Chrome driver...\n2025-07-22 10:38:53,732 - INFO - ====== WebDriver manager ======\n2025-07-22 10:38:56,905 - INFO - Get LATEST chromedriver version for google-chrome\n2025-07-22 10:38:58,812 - INFO - Get LATEST chromedriver version for google-chrome\n2025-07-22 10:39:00,385 - INFO - Driver [C:\\WINDOWS\\system32\\config\\systemprofile\\.wdm\\drivers\\chromedriver\\win64\\138.0.7204.157\\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache\n2025-07-22 10:39:00,385 - INFO - Chrome driver path: C:\\WINDOWS\\system32\\config\\systemprofile\\.wdm\\drivers\\chromedriver\\win64\\138.0.7204.157\\chromedriver-win32/chromedriver.exe\n\n------------------------------ Captured log setup ------------------------------\nINFO     tests.test_video:test_video.py:27 Setting up Chrome driver...\nINFO     WDM:logger.py:11 ====== WebDriver manager ======\nINFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome\nINFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome\nINFO     WDM:logger.py:11 Driver [C:\\WINDOWS\\system32\\config\\systemprofile\\.wdm\\drivers\\chromedriver\\win64\\138.0.7204.157\\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache\nINFO     tests.test_video:test_video.py:36 Chrome driver path: C:\\WINDOWS\\system32\\config\\systemprofile\\.wdm\\drivers\\chromedriver\\win64\\138.0.7204.157\\chromedriver-win32/chromedriver.exe\n\n----------------------------- Captured stderr call -----------------------------\n2025-07-22 10:39:02,807 - INFO - [CHROME] Step 1: Play video first\n2025-07-22 10:39:04,330 - INFO - [CHROME] Step 2: Clear previous events\n2025-07-22 10:39:04,341 - INFO - [CHROME] Step 3: Click pause button\n2025-07-22 10:39:05,853 - INFO - [CHROME] Step 4: Verify video is paused\n2025-07-22 10:39:05,865 - INFO - [CHROME] \u2705 Video is paused: True\n2025-07-22 10:39:05,865 - INFO - [CHROME] Step 5: Check pause events\n2025-07-22 10:39:05,890 - WARNING - [CHROME] BUG FOUND: Pause sends &amp;#x27;play&amp;#x27; event instead of &amp;#x27;pause&amp;#x27;\n2025-07-22 10:39:05,890 - WARNING - [CHROME] Events captured: [{&amp;#x27;timestamp&amp;#x27;: &amp;#x27;2025-07-22T07:39:04.350Z&amp;#x27;, &amp;#x27;type&amp;#x27;: &amp;#x27;play&amp;#x27;, &amp;#x27;userId&amp;#x27;: &amp;#x27;user-123&amp;#x27;, &amp;#x27;videoTime&amp;#x27;: 1.421912}]\n2025-07-22 10:39:05,904 - INFO - [CHROME] \u2705 Event sent: {&amp;#x27;timestamp&amp;#x27;: &amp;#x27;2025-07-22T07:39:04.350Z&amp;#x27;, &amp;#x27;type&amp;#x27;: &amp;#x27;play&amp;#x27;, &amp;#x27;userId&amp;#x27;: &amp;#x27;user-123&amp;#x27;, &amp;#x27;videoTime&amp;#x27;: 1.421912}\n\n------------------------------ Captured log call -------------------------------\nINFO     tests.test_video:test_video.py:174 [CHROME] Step 1: Play video first\nINFO     tests.test_video:test_video.py:178 [CHROME] Step 2: Clear previous events\nINFO     tests.test_video:test_video.py:181 [CHROME] Step 3: Click pause button\nINFO     tests.test_video:test_video.py:185 [CHROME] Step 4: Verify video is paused\nINFO     tests.test_video:test_video.py:188 [CHROME] \u2705 Video is paused: True\nINFO     tests.test_video:test_video.py:190 [CHROME] Step 5: Check pause events\nWARNING  tests.test_video:test_video.py:195 [CHROME] BUG FOUND: Pause sends &amp;#x27;play&amp;#x27; event instead of &amp;#x27;pause&amp;#x27;\nWARNING  tests.test_video:test_video.py:196 [CHROME] Events captured: [{&amp;#x27;timestamp&amp;#x27;: &amp;#x27;2025-07-22T07:39:04.350Z&amp;#x27;, &amp;#x27;type&amp;#x27;: &amp;#x27;play&amp;#x27;, &amp;#x27;userId&amp;#x27;: &amp;#x27;user-123&amp;#x27;, &amp;#x27;videoTime&amp;#x27;: 1.421912}]\nINFO     tests.test_video:test_video.py:205 [CHROME] \u2705 Event sent: {&amp;#x27;timestamp&amp;#x27;: &amp;#x27;2025-07-22T07:39:04.350Z&amp;#x27;, &amp;#x27;type&amp;#x27;: &amp;#x27;play&amp;#x27;, &amp;#x27;userId&amp;#x27;: &amp;#x27;user-123&amp;#x27;, &amp;#x27;videoTime&amp;#x27;: 1.421912}\n\n--------------------------- Captured stderr teardown ---------------------------\n2025-07-22 10:39:05,905 - INFO - Closing chrome driver...\n\n---------------------------- Captured log teardown -----------------------------\nINFO     tests.test_video:test_video.py:119 Closing chrome driver...&#34;}], &#34;tests/test_video.py::TestVideoPlayer::test_pause_button[firefox]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_video.py::TestVideoPlayer::test_pause_button[firefox]&#34;, &#34;duration&#34;: &#34;00:00:32&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_video.py::TestVideoPlayer::test_pause_button[firefox]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:32&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;---------------------------- Captured stderr setup -----------------------------\n2025-07-22 10:39:12,141 - INFO - Setting up Firefox driver...\n2025-07-22 10:39:12,141 - INFO - Found Firefox at: C:\\Program Files\\Mozilla Firefox\\firefox.exe\n2025-07-22 10:39:12,141 - INFO - ====== WebDriver manager ======\n2025-07-22 10:39:17,488 - INFO - Get LATEST geckodriver version for 140.0 firefox\n2025-07-22 10:39:18,676 - INFO - Get LATEST geckodriver version for 140.0 firefox\n2025-07-22 10:39:19,922 - INFO - Driver [C:\\WINDOWS\\system32\\config\\systemprofile\\.wdm\\drivers\\geckodriver\\win64\\v0.36.0\\geckodriver.exe] found in cache\n\n------------------------------ Captured log setup ------------------------------\nINFO     tests.test_video:test_video.py:49 Setting up Firefox driver...\nINFO     tests.test_video:test_video.py:62 Found Firefox at: C:\\Program Files\\Mozilla Firefox\\firefox.exe\nINFO     WDM:logger.py:11 ====== WebDriver manager ======\nINFO     WDM:logger.py:11 Get LATEST geckodriver version for 140.0 firefox\nINFO     WDM:logger.py:11 Get LATEST geckodriver version for 140.0 firefox\nINFO     WDM:logger.py:11 Driver [C:\\WINDOWS\\system32\\config\\systemprofile\\.wdm\\drivers\\geckodriver\\win64\\v0.36.0\\geckodriver.exe] found in cache\n\n----------------------------- Captured stderr call -----------------------------\n2025-07-22 10:39:37,118 - INFO - [FIREFOX] Step 1: Play video first\n2025-07-22 10:39:38,634 - INFO - [FIREFOX] Step 2: Clear previous events\n2025-07-22 10:39:38,640 - INFO - [FIREFOX] Step 3: Click pause button\n2025-07-22 10:39:40,151 - INFO - [FIREFOX] Step 4: Verify video is paused\n2025-07-22 10:39:40,157 - INFO - [FIREFOX] \u2705 Video is paused: True\n2025-07-22 10:39:40,157 - INFO - [FIREFOX] Step 5: Check pause events\n2025-07-22 10:39:40,171 - WARNING - [FIREFOX] BUG FOUND: Pause sends &amp;#x27;play&amp;#x27; event instead of &amp;#x27;pause&amp;#x27;\n2025-07-22 10:39:40,171 - WARNING - [FIREFOX] Events captured: [{&amp;#x27;timestamp&amp;#x27;: &amp;#x27;2025-07-22T07:39:38.648Z&amp;#x27;, &amp;#x27;type&amp;#x27;: &amp;#x27;play&amp;#x27;, &amp;#x27;userId&amp;#x27;: &amp;#x27;user-123&amp;#x27;, &amp;#x27;videoTime&amp;#x27;: 1.192229}]\n2025-07-22 10:39:40,177 - INFO - [FIREFOX] \u2705 Event sent: {&amp;#x27;timestamp&amp;#x27;: &amp;#x27;2025-07-22T07:39:38.648Z&amp;#x27;, &amp;#x27;type&amp;#x27;: &amp;#x27;play&amp;#x27;, &amp;#x27;userId&amp;#x27;: &amp;#x27;user-123&amp;#x27;, &amp;#x27;videoTime&amp;#x27;: 1.192229}\n\n------------------------------ Captured log call -------------------------------\nINFO     tests.test_video:test_video.py:174 [FIREFOX] Step 1: Play video first\nINFO     tests.test_video:test_video.py:178 [FIREFOX] Step 2: Clear previous events\nINFO     tests.test_video:test_video.py:181 [FIREFOX] Step 3: Click pause button\nINFO     tests.test_video:test_video.py:185 [FIREFOX] Step 4: Verify video is paused\nINFO     tests.test_video:test_video.py:188 [FIREFOX] \u2705 Video is paused: True\nINFO     tests.test_video:test_video.py:190 [FIREFOX] Step 5: Check pause events\nWARNING  tests.test_video:test_video.py:195 [FIREFOX] BUG FOUND: Pause sends &amp;#x27;play&amp;#x27; event instead of &amp;#x27;pause&amp;#x27;\nWARNING  tests.test_video:test_video.py:196 [FIREFOX] Events captured: [{&amp;#x27;timestamp&amp;#x27;: &amp;#x27;2025-07-22T07:39:38.648Z&amp;#x27;, &amp;#x27;type&amp;#x27;: &amp;#x27;play&amp;#x27;, &amp;#x27;userId&amp;#x27;: &amp;#x27;user-123&amp;#x27;, &amp;#x27;videoTime&amp;#x27;: 1.192229}]\nINFO     tests.test_video:test_video.py:205 [FIREFOX] \u2705 Event sent: {&amp;#x27;timestamp&amp;#x27;: &amp;#x27;2025-07-22T07:39:38.648Z&amp;#x27;, &amp;#x27;type&amp;#x27;: &amp;#x27;play&amp;#x27;, &amp;#x27;userId&amp;#x27;: &amp;#x27;user-123&amp;#x27;, &amp;#x27;videoTime&amp;#x27;: 1.192229}\n\n--------------------------- Captured stderr teardown ---------------------------\n2025-07-22 10:39:40,179 - INFO - Closing firefox driver...\n\n---------------------------- Captured log teardown -----------------------------\nINFO     tests.test_video:test_video.py:119 Closing firefox driver...&#34;}], &#34;tests/test_video.py::TestVideoPlayer::test_seek_control[chrome]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_video.py::TestVideoPlayer::test_seek_control[chrome]&#34;, &#34;duration&#34;: &#34;00:00:13&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_video.py::TestVideoPlayer::test_seek_control[chrome]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:13&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;---------------------------- Captured stderr setup -----------------------------\n2025-07-22 10:39:47,893 - INFO - Setting up Chrome driver...\n2025-07-22 10:39:47,893 - INFO - ====== WebDriver manager ======\n2025-07-22 10:39:50,014 - INFO - Get LATEST chromedriver version for google-chrome\n2025-07-22 10:39:51,521 - INFO - Get LATEST chromedriver version for google-chrome\n2025-07-22 10:39:53,261 - INFO - Driver [C:\\WINDOWS\\system32\\config\\systemprofile\\.wdm\\drivers\\chromedriver\\win64\\138.0.7204.157\\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache\n2025-07-22 10:39:53,261 - INFO - Chrome driver path: C:\\WINDOWS\\system32\\config\\systemprofile\\.wdm\\drivers\\chromedriver\\win64\\138.0.7204.157\\chromedriver-win32/chromedriver.exe\n\n------------------------------ Captured log setup ------------------------------\nINFO     tests.test_video:test_video.py:27 Setting up Chrome driver...\nINFO     WDM:logger.py:11 ====== WebDriver manager ======\nINFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome\nINFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome\nINFO     WDM:logger.py:11 Driver [C:\\WINDOWS\\system32\\config\\systemprofile\\.wdm\\drivers\\chromedriver\\win64\\138.0.7204.157\\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache\nINFO     tests.test_video:test_video.py:36 Chrome driver path: C:\\WINDOWS\\system32\\config\\systemprofile\\.wdm\\drivers\\chromedriver\\win64\\138.0.7204.157\\chromedriver-win32/chromedriver.exe\n\n----------------------------- Captured stderr call -----------------------------\n2025-07-22 10:39:55,451 - INFO - [CHROME] Step 1: Play video\n2025-07-22 10:39:56,982 - INFO - [CHROME] Step 2: Get video duration\n2025-07-22 10:39:56,993 - INFO - [CHROME] Video duration: 10.0 seconds\n2025-07-22 10:39:56,993 - INFO - [CHROME] Step 3: Clear events and seek to 10 seconds\n2025-07-22 10:39:58,543 - INFO - [CHROME] Step 4: Verify seek worked\n2025-07-22 10:39:58,563 - INFO - [CHROME] \u2705 Seeked to 10.0s\n2025-07-22 10:39:58,563 - INFO - [CHROME] Step 5: Check seeked events\n2025-07-22 10:39:58,587 - INFO - [CHROME] \u2705 Seeked event valid: {&amp;#x27;timestamp&amp;#x27;: &amp;#x27;2025-07-22T07:39:57.119Z&amp;#x27;, &amp;#x27;type&amp;#x27;: &amp;#x27;seeked&amp;#x27;, &amp;#x27;userId&amp;#x27;: &amp;#x27;user-123&amp;#x27;, &amp;#x27;videoTime&amp;#x27;: 10.000316}\n\n------------------------------ Captured log call -------------------------------\nINFO     tests.test_video:test_video.py:212 [CHROME] Step 1: Play video\nINFO     tests.test_video:test_video.py:216 [CHROME] Step 2: Get video duration\nINFO     tests.test_video:test_video.py:218 [CHROME] Video duration: 10.0 seconds\nINFO     tests.test_video:test_video.py:220 [CHROME] Step 3: Clear events and seek to 10 seconds\nINFO     tests.test_video:test_video.py:226 [CHROME] Step 4: Verify seek worked\nINFO     tests.test_video:test_video.py:229 [CHROME] \u2705 Seeked to 10.0s\nINFO     tests.test_video:test_video.py:231 [CHROME] Step 5: Check seeked events\nINFO     tests.test_video:test_video.py:240 [CHROME] \u2705 Seeked event valid: {&amp;#x27;timestamp&amp;#x27;: &amp;#x27;2025-07-22T07:39:57.119Z&amp;#x27;, &amp;#x27;type&amp;#x27;: &amp;#x27;seeked&amp;#x27;, &amp;#x27;userId&amp;#x27;: &amp;#x27;user-123&amp;#x27;, &amp;#x27;videoTime&amp;#x27;: 10.000316}\n\n--------------------------- Captured stderr teardown ---------------------------\n2025-07-22 10:39:58,587 - INFO - Closing chrome driver...\n\n---------------------------- Captured log teardown -----------------------------\nINFO     tests.test_video:test_video.py:119 Closing chrome driver...&#34;}], &#34;tests/test_video.py::TestVideoPlayer::test_seek_control[firefox]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_video.py::TestVideoPlayer::test_seek_control[firefox]&#34;, &#34;duration&#34;: &#34;00:00:26&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_video.py::TestVideoPlayer::test_seek_control[firefox]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:26&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;---------------------------- Captured stderr setup -----------------------------\n2025-07-22 10:40:04,975 - INFO - Setting up Firefox driver...\n2025-07-22 10:40:04,975 - INFO - Found Firefox at: C:\\Program Files\\Mozilla Firefox\\firefox.exe\n2025-07-22 10:40:04,975 - INFO - ====== WebDriver manager ======\n2025-07-22 10:40:10,236 - INFO - Get LATEST geckodriver version for 140.0 firefox\n2025-07-22 10:40:11,189 - INFO - Get LATEST geckodriver version for 140.0 firefox\n2025-07-22 10:40:11,912 - INFO - Driver [C:\\WINDOWS\\system32\\config\\systemprofile\\.wdm\\drivers\\geckodriver\\win64\\v0.36.0\\geckodriver.exe] found in cache\n\n------------------------------ Captured log setup ------------------------------\nINFO     tests.test_video:test_video.py:49 Setting up Firefox driver...\nINFO     tests.test_video:test_video.py:62 Found Firefox at: C:\\Program Files\\Mozilla Firefox\\firefox.exe\nINFO     WDM:logger.py:11 ====== WebDriver manager ======\nINFO     WDM:logger.py:11 Get LATEST geckodriver version for 140.0 firefox\nINFO     WDM:logger.py:11 Get LATEST geckodriver version for 140.0 firefox\nINFO     WDM:logger.py:11 Driver [C:\\WINDOWS\\system32\\config\\systemprofile\\.wdm\\drivers\\geckodriver\\win64\\v0.36.0\\geckodriver.exe] found in cache\n\n----------------------------- Captured stderr call -----------------------------\n2025-07-22 10:40:24,410 - INFO - [FIREFOX] Step 1: Play video\n2025-07-22 10:40:25,927 - INFO - [FIREFOX] Step 2: Get video duration\n2025-07-22 10:40:25,932 - INFO - [FIREFOX] Video duration: 10.0 seconds\n2025-07-22 10:40:25,932 - INFO - [FIREFOX] Step 3: Clear events and seek to 10 seconds\n2025-07-22 10:40:27,445 - INFO - [FIREFOX] Step 4: Verify seek worked\n2025-07-22 10:40:27,449 - INFO - [FIREFOX] \u2705 Seeked to 10.0s\n2025-07-22 10:40:27,449 - INFO - [FIREFOX] Step 5: Check seeked events\n2025-07-22 10:40:27,460 - INFO - [FIREFOX] \u2705 Seeked event valid: {&amp;#x27;timestamp&amp;#x27;: &amp;#x27;2025-07-22T07:40:26.246Z&amp;#x27;, &amp;#x27;type&amp;#x27;: &amp;#x27;seeked&amp;#x27;, &amp;#x27;userId&amp;#x27;: &amp;#x27;user-123&amp;#x27;, &amp;#x27;videoTime&amp;#x27;: 10}\n\n------------------------------ Captured log call -------------------------------\nINFO     tests.test_video:test_video.py:212 [FIREFOX] Step 1: Play video\nINFO     tests.test_video:test_video.py:216 [FIREFOX] Step 2: Get video duration\nINFO     tests.test_video:test_video.py:218 [FIREFOX] Video duration: 10.0 seconds\nINFO     tests.test_video:test_video.py:220 [FIREFOX] Step 3: Clear events and seek to 10 seconds\nINFO     tests.test_video:test_video.py:226 [FIREFOX] Step 4: Verify seek worked\nINFO     tests.test_video:test_video.py:229 [FIREFOX] \u2705 Seeked to 10.0s\nINFO     tests.test_video:test_video.py:231 [FIREFOX] Step 5: Check seeked events\nINFO     tests.test_video:test_video.py:240 [FIREFOX] \u2705 Seeked event valid: {&amp;#x27;timestamp&amp;#x27;: &amp;#x27;2025-07-22T07:40:26.246Z&amp;#x27;, &amp;#x27;type&amp;#x27;: &amp;#x27;seeked&amp;#x27;, &amp;#x27;userId&amp;#x27;: &amp;#x27;user-123&amp;#x27;, &amp;#x27;videoTime&amp;#x27;: 10}\n\n--------------------------- Captured stderr teardown ---------------------------\n2025-07-22 10:40:27,460 - INFO - Closing firefox driver...\n\n---------------------------- Captured log teardown -----------------------------\nINFO     tests.test_video:test_video.py:119 Closing firefox driver...&#34;}], &#34;tests/test_video.py::TestVideoPlayer::test_scroll_event[chrome]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_video.py::TestVideoPlayer::test_scroll_event[chrome]&#34;, &#34;duration&#34;: &#34;00:00:15&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_video.py::TestVideoPlayer::test_scroll_event[chrome]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:15&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;---------------------------- Captured stderr setup -----------------------------\n2025-07-22 10:40:34,880 - INFO - Setting up Chrome driver...\n2025-07-22 10:40:34,880 - INFO - ====== WebDriver manager ======\n2025-07-22 10:40:36,535 - INFO - Get LATEST chromedriver version for google-chrome\n2025-07-22 10:40:37,979 - INFO - Get LATEST chromedriver version for google-chrome\n2025-07-22 10:40:39,468 - INFO - Driver [C:\\WINDOWS\\system32\\config\\systemprofile\\.wdm\\drivers\\chromedriver\\win64\\138.0.7204.157\\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache\n2025-07-22 10:40:39,468 - INFO - Chrome driver path: C:\\WINDOWS\\system32\\config\\systemprofile\\.wdm\\drivers\\chromedriver\\win64\\138.0.7204.157\\chromedriver-win32/chromedriver.exe\n\n------------------------------ Captured log setup ------------------------------\nINFO     tests.test_video:test_video.py:27 Setting up Chrome driver...\nINFO     WDM:logger.py:11 ====== WebDriver manager ======\nINFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome\nINFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome\nINFO     WDM:logger.py:11 Driver [C:\\WINDOWS\\system32\\config\\systemprofile\\.wdm\\drivers\\chromedriver\\win64\\138.0.7204.157\\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache\nINFO     tests.test_video:test_video.py:36 Chrome driver path: C:\\WINDOWS\\system32\\config\\systemprofile\\.wdm\\drivers\\chromedriver\\win64\\138.0.7204.157\\chromedriver-win32/chromedriver.exe\n\n----------------------------- Captured stderr call -----------------------------\n2025-07-22 10:40:42,703 - INFO - [CHROME] Step 1: Add content to make page scrollable\n2025-07-22 10:40:43,216 - INFO - [CHROME] Step 2: Scroll to top\n2025-07-22 10:40:44,730 - INFO - [CHROME] Step 3: Clear events and scroll down\n2025-07-22 10:40:46,257 - INFO - [CHROME] Step 4: Check initial scroll events\n2025-07-22 10:40:46,279 - INFO - [CHROME] Scroll events after first scroll: 1\n2025-07-22 10:40:46,284 - INFO - [CHROME] Step 5: Scroll more\n2025-07-22 10:40:47,831 - INFO - [CHROME] Total scroll events: 2\n2025-07-22 10:40:47,833 - INFO - [CHROME] Step 6: Validate scroll event structure\n2025-07-22 10:40:47,833 - INFO - [CHROME] \u2705 Scroll event valid: {&amp;#x27;timestamp&amp;#x27;: &amp;#x27;2025-07-22T07:40:44.752Z&amp;#x27;, &amp;#x27;type&amp;#x27;: &amp;#x27;scroll&amp;#x27;, &amp;#x27;userId&amp;#x27;: &amp;#x27;user-123&amp;#x27;, &amp;#x27;videoTime&amp;#x27;: 0}\n\n------------------------------ Captured log call -------------------------------\nINFO     tests.test_video:test_video.py:247 [CHROME] Step 1: Add content to make page scrollable\nINFO     tests.test_video:test_video.py:250 [CHROME] Step 2: Scroll to top\nINFO     tests.test_video:test_video.py:254 [CHROME] Step 3: Clear events and scroll down\nINFO     tests.test_video:test_video.py:259 [CHROME] Step 4: Check initial scroll events\nINFO     tests.test_video:test_video.py:262 [CHROME] Scroll events after first scroll: 1\nINFO     tests.test_video:test_video.py:264 [CHROME] Step 5: Scroll more\nINFO     tests.test_video:test_video.py:269 [CHROME] Total scroll events: 2\nINFO     tests.test_video:test_video.py:273 [CHROME] Step 6: Validate scroll event structure\nINFO     tests.test_video:test_video.py:279 [CHROME] \u2705 Scroll event valid: {&amp;#x27;timestamp&amp;#x27;: &amp;#x27;2025-07-22T07:40:44.752Z&amp;#x27;, &amp;#x27;type&amp;#x27;: &amp;#x27;scroll&amp;#x27;, &amp;#x27;userId&amp;#x27;: &amp;#x27;user-123&amp;#x27;, &amp;#x27;videoTime&amp;#x27;: 0}\n\n--------------------------- Captured stderr teardown ---------------------------\n2025-07-22 10:40:47,837 - INFO - Closing chrome driver...\n\n---------------------------- Captured log teardown -----------------------------\nINFO     tests.test_video:test_video.py:119 Closing chrome driver...&#34;}], &#34;tests/test_video.py::TestVideoPlayer::test_scroll_event[firefox]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_video.py::TestVideoPlayer::test_scroll_event[firefox]&#34;, &#34;duration&#34;: &#34;00:00:29&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_video.py::TestVideoPlayer::test_scroll_event[firefox]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:29&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;---------------------------- Captured stderr setup -----------------------------\n2025-07-22 10:40:54,238 - INFO - Setting up Firefox driver...\n2025-07-22 10:40:54,238 - INFO - Found Firefox at: C:\\Program Files\\Mozilla Firefox\\firefox.exe\n2025-07-22 10:40:54,238 - INFO - ====== WebDriver manager ======\n2025-07-22 10:40:59,303 - INFO - Get LATEST geckodriver version for 140.0 firefox\n2025-07-22 10:41:00,288 - INFO - Get LATEST geckodriver version for 140.0 firefox\n2025-07-22 10:41:01,624 - INFO - Driver [C:\\WINDOWS\\system32\\config\\systemprofile\\.wdm\\drivers\\geckodriver\\win64\\v0.36.0\\geckodriver.exe] found in cache\n\n------------------------------ Captured log setup ------------------------------\nINFO     tests.test_video:test_video.py:49 Setting up Firefox driver...\nINFO     tests.test_video:test_video.py:62 Found Firefox at: C:\\Program Files\\Mozilla Firefox\\firefox.exe\nINFO     WDM:logger.py:11 ====== WebDriver manager ======\nINFO     WDM:logger.py:11 Get LATEST geckodriver version for 140.0 firefox\nINFO     WDM:logger.py:11 Get LATEST geckodriver version for 140.0 firefox\nINFO     WDM:logger.py:11 Driver [C:\\WINDOWS\\system32\\config\\systemprofile\\.wdm\\drivers\\geckodriver\\win64\\v0.36.0\\geckodriver.exe] found in cache\n\n----------------------------- Captured stderr call -----------------------------\n2025-07-22 10:41:14,083 - INFO - [FIREFOX] Step 1: Add content to make page scrollable\n2025-07-22 10:41:14,597 - INFO - [FIREFOX] Step 2: Scroll to top\n2025-07-22 10:41:16,133 - INFO - [FIREFOX] Step 3: Clear events and scroll down\n2025-07-22 10:41:17,661 - INFO - [FIREFOX] Step 4: Check initial scroll events\n2025-07-22 10:41:17,676 - INFO - [FIREFOX] Scroll events after first scroll: 1\n2025-07-22 10:41:17,680 - INFO - [FIREFOX] Step 5: Scroll more\n2025-07-22 10:41:19,201 - INFO - [FIREFOX] Total scroll events: 2\n2025-07-22 10:41:19,203 - INFO - [FIREFOX] Step 6: Validate scroll event structure\n2025-07-22 10:41:19,203 - INFO - [FIREFOX] \u2705 Scroll event valid: {&amp;#x27;timestamp&amp;#x27;: &amp;#x27;2025-07-22T07:41:16.154Z&amp;#x27;, &amp;#x27;type&amp;#x27;: &amp;#x27;scroll&amp;#x27;, &amp;#x27;userId&amp;#x27;: &amp;#x27;user-123&amp;#x27;, &amp;#x27;videoTime&amp;#x27;: 0}\n\n------------------------------ Captured log call -------------------------------\nINFO     tests.test_video:test_video.py:247 [FIREFOX] Step 1: Add content to make page scrollable\nINFO     tests.test_video:test_video.py:250 [FIREFOX] Step 2: Scroll to top\nINFO     tests.test_video:test_video.py:254 [FIREFOX] Step 3: Clear events and scroll down\nINFO     tests.test_video:test_video.py:259 [FIREFOX] Step 4: Check initial scroll events\nINFO     tests.test_video:test_video.py:262 [FIREFOX] Scroll events after first scroll: 1\nINFO     tests.test_video:test_video.py:264 [FIREFOX] Step 5: Scroll more\nINFO     tests.test_video:test_video.py:269 [FIREFOX] Total scroll events: 2\nINFO     tests.test_video:test_video.py:273 [FIREFOX] Step 6: Validate scroll event structure\nINFO     tests.test_video:test_video.py:279 [FIREFOX] \u2705 Scroll event valid: {&amp;#x27;timestamp&amp;#x27;: &amp;#x27;2025-07-22T07:41:16.154Z&amp;#x27;, &amp;#x27;type&amp;#x27;: &amp;#x27;scroll&amp;#x27;, &amp;#x27;userId&amp;#x27;: &amp;#x27;user-123&amp;#x27;, &amp;#x27;videoTime&amp;#x27;: 0}\n\n--------------------------- Captured stderr teardown ---------------------------\n2025-07-22 10:41:19,205 - INFO - Closing firefox driver...\n\n---------------------------- Captured log teardown -----------------------------\nINFO     tests.test_video:test_video.py:119 Closing firefox driver...&#34;}]}, &#34;renderCollapsed&#34;: [&#34;passed&#34;], &#34;initialSort&#34;: &#34;result&#34;, &#34;title&#34;: &#34;report.html&#34;}"></div>
+    <script>
+      (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+const { getCollapsedCategory, setCollapsedIds } = require('./storage.js')
+
+class DataManager {
+    setManager(data) {
+        const collapsedCategories = [...getCollapsedCategory(data.renderCollapsed)]
+        const collapsedIds = []
+        const tests = Object.values(data.tests).flat().map((test, index) => {
+            const collapsed = collapsedCategories.includes(test.result.toLowerCase())
+            const id = `test_${index}`
+            if (collapsed) {
+                collapsedIds.push(id)
+            }
+            return {
+                ...test,
+                id,
+                collapsed,
+            }
+        })
+        const dataBlob = { ...data, tests }
+        this.data = { ...dataBlob }
+        this.renderData = { ...dataBlob }
+        setCollapsedIds(collapsedIds)
+    }
+
+    get allData() {
+        return { ...this.data }
+    }
+
+    resetRender() {
+        this.renderData = { ...this.data }
+    }
+
+    setRender(data) {
+        this.renderData.tests = [...data]
+    }
+
+    toggleCollapsedItem(id) {
+        this.renderData.tests = this.renderData.tests.map((test) =>
+            test.id === id ? { ...test, collapsed: !test.collapsed } : test,
+        )
+    }
+
+    set allCollapsed(collapsed) {
+        this.renderData = { ...this.renderData, tests: [...this.renderData.tests.map((test) => (
+            { ...test, collapsed }
+        ))] }
+    }
+
+    get testSubset() {
+        return [...this.renderData.tests]
+    }
+
+    get environment() {
+        return this.renderData.environment
+    }
+
+    get initialSort() {
+        return this.data.initialSort
+    }
+}
+
+module.exports = {
+    manager: new DataManager(),
+}
+
+},{"./storage.js":8}],2:[function(require,module,exports){
+const mediaViewer = require('./mediaviewer.js')
+const templateEnvRow = document.getElementById('template_environment_row')
+const templateResult = document.getElementById('template_results-table__tbody')
+
+function htmlToElements(html) {
+    const temp = document.createElement('template')
+    temp.innerHTML = html
+    return temp.content.childNodes
+}
+
+const find = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return elem.querySelector(selector)
+}
+
+const findAll = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return [...elem.querySelectorAll(selector)]
+}
+
+const dom = {
+    getStaticRow: (key, value) => {
+        const envRow = templateEnvRow.content.cloneNode(true)
+        const isObj = typeof value === 'object' && value !== null
+        const values = isObj ? Object.keys(value).map((k) => `${k}: ${value[k]}`) : null
+
+        const valuesElement = htmlToElements(
+            values ? `<ul>${values.map((val) => `<li>${val}</li>`).join('')}<ul>` : `<div>${value}</div>`)[0]
+        const td = findAll('td', envRow)
+        td[0].textContent = key
+        td[1].appendChild(valuesElement)
+
+        return envRow
+    },
+    getResultTBody: ({ testId, id, log, extras, resultsTableRow, tableHtml, result, collapsed }) => {
+        const resultBody = templateResult.content.cloneNode(true)
+        resultBody.querySelector('tbody').classList.add(result.toLowerCase())
+        resultBody.querySelector('tbody').id = testId
+        resultBody.querySelector('.collapsible').dataset.id = id
+
+        resultsTableRow.forEach((html) => {
+            const t = document.createElement('template')
+            t.innerHTML = html
+            resultBody.querySelector('.collapsible').appendChild(t.content)
+        })
+
+        if (log) {
+            // Wrap lines starting with "E" with span.error to color those lines red
+            const wrappedLog = log.replace(/^E.*$/gm, (match) => `<span class="error">${match}</span>`)
+            resultBody.querySelector('.log').innerHTML = wrappedLog
+        } else {
+            resultBody.querySelector('.log').remove()
+        }
+
+        if (collapsed) {
+            resultBody.querySelector('.collapsible > td')?.classList.add('collapsed')
+            resultBody.querySelector('.extras-row').classList.add('hidden')
+        } else {
+            resultBody.querySelector('.collapsible > td')?.classList.remove('collapsed')
+        }
+
+        const media = []
+        extras?.forEach(({ name, format_type, content }) => {
+            if (['image', 'video'].includes(format_type)) {
+                media.push({ path: content, name, format_type })
+            }
+
+            if (format_type === 'html') {
+                resultBody.querySelector('.extraHTML').insertAdjacentHTML('beforeend', `<div>${content}</div>`)
+            }
+        })
+        mediaViewer.setup(resultBody, media)
+
+        // Add custom html from the pytest_html_results_table_html hook
+        tableHtml?.forEach((item) => {
+            resultBody.querySelector('td[class="extra"]').insertAdjacentHTML('beforeend', item)
+        })
+
+        return resultBody
+    },
+}
+
+module.exports = {
+    dom,
+    htmlToElements,
+    find,
+    findAll,
+}
+
+},{"./mediaviewer.js":6}],3:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const storageModule = require('./storage.js')
+
+const getFilteredSubSet = (filter) =>
+    manager.allData.tests.filter(({ result }) => filter.includes(result.toLowerCase()))
+
+const doInitFilter = () => {
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+}
+
+const doFilter = (type, show) => {
+    if (show) {
+        storageModule.showCategory(type)
+    } else {
+        storageModule.hideCategory(type)
+    }
+
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+
+    const sortColumn = storageModule.getSort()
+    doSort(sortColumn, true)
+}
+
+module.exports = {
+    doFilter,
+    doInitFilter,
+}
+
+},{"./datamanager.js":1,"./sort.js":7,"./storage.js":8}],4:[function(require,module,exports){
+const { redraw, bindEvents, renderStatic } = require('./main.js')
+const { doInitFilter } = require('./filter.js')
+const { doInitSort } = require('./sort.js')
+const { manager } = require('./datamanager.js')
+const data = JSON.parse(document.getElementById('data-container').dataset.jsonblob)
+
+function init() {
+    manager.setManager(data)
+    doInitFilter()
+    doInitSort()
+    renderStatic()
+    redraw()
+    bindEvents()
+}
+
+init()
+
+},{"./datamanager.js":1,"./filter.js":3,"./main.js":5,"./sort.js":7}],5:[function(require,module,exports){
+const { dom, find, findAll } = require('./dom.js')
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const { doFilter } = require('./filter.js')
+const {
+    getVisible,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    getSortDirection,
+    possibleFilters,
+} = require('./storage.js')
+
+const removeChildren = (node) => {
+    while (node.firstChild) {
+        node.removeChild(node.firstChild)
+    }
+}
+
+const renderStatic = () => {
+    const renderEnvironmentTable = () => {
+        const environment = manager.environment
+        const rows = Object.keys(environment).map((key) => dom.getStaticRow(key, environment[key]))
+        const table = document.getElementById('environment')
+        removeChildren(table)
+        rows.forEach((row) => table.appendChild(row))
+    }
+    renderEnvironmentTable()
+}
+
+const addItemToggleListener = (elem) => {
+    elem.addEventListener('click', ({ target }) => {
+        const id = target.parentElement.dataset.id
+        manager.toggleCollapsedItem(id)
+
+        const collapsedIds = getCollapsedIds()
+        if (collapsedIds.includes(id)) {
+            const updated = collapsedIds.filter((item) => item !== id)
+            setCollapsedIds(updated)
+        } else {
+            collapsedIds.push(id)
+            setCollapsedIds(collapsedIds)
+        }
+        redraw()
+    })
+}
+
+const renderContent = (tests) => {
+    const sortAttr = getSort(manager.initialSort)
+    const sortAsc = JSON.parse(getSortDirection())
+    const rows = tests.map(dom.getResultTBody)
+    const table = document.getElementById('results-table')
+    const tableHeader = document.getElementById('results-table-head')
+
+    const newTable = document.createElement('table')
+    newTable.id = 'results-table'
+
+    // remove all sorting classes and set the relevant
+    findAll('.sortable', tableHeader).forEach((elem) => elem.classList.remove('asc', 'desc'))
+    tableHeader.querySelector(`.sortable[data-column-type="${sortAttr}"]`)?.classList.add(sortAsc ? 'desc' : 'asc')
+    newTable.appendChild(tableHeader)
+
+    if (!rows.length) {
+        const emptyTable = document.getElementById('template_results-table__body--empty').content.cloneNode(true)
+        newTable.appendChild(emptyTable)
+    } else {
+        rows.forEach((row) => {
+            if (!!row) {
+                findAll('.collapsible td:not(.col-links', row).forEach(addItemToggleListener)
+                find('.logexpander', row).addEventListener('click',
+                    (evt) => evt.target.parentNode.classList.toggle('expanded'),
+                )
+                newTable.appendChild(row)
+            }
+        })
+    }
+
+    table.replaceWith(newTable)
+}
+
+const renderDerived = () => {
+    const currentFilter = getVisible()
+    possibleFilters.forEach((result) => {
+        const input = document.querySelector(`input[data-test-result="${result}"]`)
+        input.checked = currentFilter.includes(result)
+    })
+}
+
+const bindEvents = () => {
+    const filterColumn = (evt) => {
+        const { target: element } = evt
+        const { testResult } = element.dataset
+
+        doFilter(testResult, element.checked)
+        const collapsedIds = getCollapsedIds()
+        const updated = manager.renderData.tests.map((test) => {
+            return {
+                ...test,
+                collapsed: collapsedIds.includes(test.id),
+            }
+        })
+        manager.setRender(updated)
+        redraw()
+    }
+
+    const header = document.getElementById('environment-header')
+    header.addEventListener('click', () => {
+        const table = document.getElementById('environment')
+        table.classList.toggle('hidden')
+        header.classList.toggle('collapsed')
+    })
+
+    findAll('input[name="filter_checkbox"]').forEach((elem) => {
+        elem.addEventListener('click', filterColumn)
+    })
+
+    findAll('.sortable').forEach((elem) => {
+        elem.addEventListener('click', (evt) => {
+            const { target: element } = evt
+            const { columnType } = element.dataset
+            doSort(columnType)
+            redraw()
+        })
+    })
+
+    document.getElementById('show_all_details').addEventListener('click', () => {
+        manager.allCollapsed = false
+        setCollapsedIds([])
+        redraw()
+    })
+    document.getElementById('hide_all_details').addEventListener('click', () => {
+        manager.allCollapsed = true
+        const allIds = manager.renderData.tests.map((test) => test.id)
+        setCollapsedIds(allIds)
+        redraw()
+    })
+}
+
+const redraw = () => {
+    const { testSubset } = manager
+
+    renderContent(testSubset)
+    renderDerived()
+}
+
+module.exports = {
+    redraw,
+    bindEvents,
+    renderStatic,
+}
+
+},{"./datamanager.js":1,"./dom.js":2,"./filter.js":3,"./sort.js":7,"./storage.js":8}],6:[function(require,module,exports){
+class MediaViewer {
+    constructor(assets) {
+        this.assets = assets
+        this.index = 0
+    }
+
+    nextActive() {
+        this.index = this.index === this.assets.length - 1 ? 0 : this.index + 1
+        return [this.activeFile, this.index]
+    }
+
+    prevActive() {
+        this.index = this.index === 0 ? this.assets.length - 1 : this.index -1
+        return [this.activeFile, this.index]
+    }
+
+    get currentIndex() {
+        return this.index
+    }
+
+    get activeFile() {
+        return this.assets[this.index]
+    }
+}
+
+
+const setup = (resultBody, assets) => {
+    if (!assets.length) {
+        resultBody.querySelector('.media').classList.add('hidden')
+        return
+    }
+
+    const mediaViewer = new MediaViewer(assets)
+    const container = resultBody.querySelector('.media-container')
+    const leftArrow = resultBody.querySelector('.media-container__nav--left')
+    const rightArrow = resultBody.querySelector('.media-container__nav--right')
+    const mediaName = resultBody.querySelector('.media__name')
+    const counter = resultBody.querySelector('.media__counter')
+    const imageEl = resultBody.querySelector('img')
+    const sourceEl = resultBody.querySelector('source')
+    const videoEl = resultBody.querySelector('video')
+
+    const setImg = (media, index) => {
+        if (media?.format_type === 'image') {
+            imageEl.src = media.path
+
+            imageEl.classList.remove('hidden')
+            videoEl.classList.add('hidden')
+        } else if (media?.format_type === 'video') {
+            sourceEl.src = media.path
+
+            videoEl.classList.remove('hidden')
+            imageEl.classList.add('hidden')
+        }
+
+        mediaName.innerText = media?.name
+        counter.innerText = `${index + 1} / ${assets.length}`
+    }
+    setImg(mediaViewer.activeFile, mediaViewer.currentIndex)
+
+    const moveLeft = () => {
+        const [media, index] = mediaViewer.prevActive()
+        setImg(media, index)
+    }
+    const doRight = () => {
+        const [media, index] = mediaViewer.nextActive()
+        setImg(media, index)
+    }
+    const openImg = () => {
+        window.open(mediaViewer.activeFile.path, '_blank')
+    }
+    if (assets.length === 1) {
+        container.classList.add('media-container--fullscreen')
+    } else {
+        leftArrow.addEventListener('click', moveLeft)
+        rightArrow.addEventListener('click', doRight)
+    }
+    imageEl.addEventListener('click', openImg)
+}
+
+module.exports = {
+    setup,
+}
+
+},{}],7:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const storageModule = require('./storage.js')
+
+const genericSort = (list, key, ascending, customOrder) => {
+    let sorted
+    if (customOrder) {
+        sorted = list.sort((a, b) => {
+            const aValue = a.result.toLowerCase()
+            const bValue = b.result.toLowerCase()
+
+            const aIndex = customOrder.findIndex((item) => item.toLowerCase() === aValue)
+            const bIndex = customOrder.findIndex((item) => item.toLowerCase() === bValue)
+
+            // Compare the indices to determine the sort order
+            return aIndex - bIndex
+        })
+    } else {
+        sorted = list.sort((a, b) => a[key] === b[key] ? 0 : a[key] > b[key] ? 1 : -1)
+    }
+
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const durationSort = (list, ascending) => {
+    const parseDuration = (duration) => {
+        if (duration.includes(':')) {
+            // If it's in the format "HH:mm:ss"
+            const [hours, minutes, seconds] = duration.split(':').map(Number)
+            return (hours * 3600 + minutes * 60 + seconds) * 1000
+        } else {
+            // If it's in the format "nnn ms"
+            return parseInt(duration)
+        }
+    }
+    const sorted = list.sort((a, b) => parseDuration(a['duration']) - parseDuration(b['duration']))
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const doInitSort = () => {
+    const type = storageModule.getSort(manager.initialSort)
+    const ascending = storageModule.getSortDirection()
+    const list = manager.testSubset
+    const initialOrder = ['Error', 'Failed', 'Rerun', 'XFailed', 'XPassed', 'Skipped', 'Passed']
+
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    if (type?.toLowerCase() === 'original') {
+        manager.setRender(list)
+    } else {
+        let sortedList
+        switch (type) {
+        case 'duration':
+            sortedList = durationSort(list, ascending)
+            break
+        case 'result':
+            sortedList = genericSort(list, type, ascending, initialOrder)
+            break
+        default:
+            sortedList = genericSort(list, type, ascending)
+            break
+        }
+        manager.setRender(sortedList)
+    }
+}
+
+const doSort = (type, skipDirection) => {
+    const newSortType = storageModule.getSort(manager.initialSort) !== type
+    const currentAsc = storageModule.getSortDirection()
+    let ascending
+    if (skipDirection) {
+        ascending = currentAsc
+    } else {
+        ascending = newSortType ? false : !currentAsc
+    }
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    const list = manager.testSubset
+    const sortedList = type === 'duration' ? durationSort(list, ascending) : genericSort(list, type, ascending)
+    manager.setRender(sortedList)
+}
+
+module.exports = {
+    doInitSort,
+    doSort,
+}
+
+},{"./datamanager.js":1,"./storage.js":8}],8:[function(require,module,exports){
+const possibleFilters = [
+    'passed',
+    'skipped',
+    'failed',
+    'error',
+    'xfailed',
+    'xpassed',
+    'rerun',
+]
+
+const getVisible = () => {
+    const url = new URL(window.location.href)
+    const settings = new URLSearchParams(url.search).get('visible')
+    const lower = (item) => {
+        const lowerItem = item.toLowerCase()
+        if (possibleFilters.includes(lowerItem)) {
+            return lowerItem
+        }
+        return null
+    }
+    return settings === null ?
+        possibleFilters :
+        [...new Set(settings?.split(',').map(lower).filter((item) => item))]
+}
+
+const hideCategory = (categoryToHide) => {
+    const url = new URL(window.location.href)
+    const visibleParams = new URLSearchParams(url.search).get('visible')
+    const currentVisible = visibleParams ? visibleParams.split(',') : [...possibleFilters]
+    const settings = [...new Set(currentVisible)].filter((f) => f !== categoryToHide).join(',')
+
+    url.searchParams.set('visible', settings)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const showCategory = (categoryToShow) => {
+    if (typeof window === 'undefined') {
+        return
+    }
+    const url = new URL(window.location.href)
+    const currentVisible = new URLSearchParams(url.search).get('visible')?.split(',').filter(Boolean) ||
+        [...possibleFilters]
+    const settings = [...new Set([categoryToShow, ...currentVisible])]
+    const noFilter = possibleFilters.length === settings.length || !settings.length
+
+    noFilter ? url.searchParams.delete('visible') : url.searchParams.set('visible', settings.join(','))
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getSort = (initialSort) => {
+    const url = new URL(window.location.href)
+    let sort = new URLSearchParams(url.search).get('sort')
+    if (!sort) {
+        sort = initialSort || 'result'
+    }
+    return sort
+}
+
+const setSort = (type) => {
+    const url = new URL(window.location.href)
+    url.searchParams.set('sort', type)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getCollapsedCategory = (renderCollapsed) => {
+    let categories
+    if (typeof window !== 'undefined') {
+        const url = new URL(window.location.href)
+        const collapsedItems = new URLSearchParams(url.search).get('collapsed')
+        switch (true) {
+        case !renderCollapsed && collapsedItems === null:
+            categories = ['passed']
+            break
+        case collapsedItems?.length === 0 || /^["']{2}$/.test(collapsedItems):
+            categories = []
+            break
+        case /^all$/.test(collapsedItems) || collapsedItems === null && /^all$/.test(renderCollapsed):
+            categories = [...possibleFilters]
+            break
+        default:
+            categories = collapsedItems?.split(',').map((item) => item.toLowerCase()) || renderCollapsed
+            break
+        }
+    } else {
+        categories = []
+    }
+    return categories
+}
+
+const getSortDirection = () => JSON.parse(sessionStorage.getItem('sortAsc')) || false
+const setSortDirection = (ascending) => sessionStorage.setItem('sortAsc', ascending)
+
+const getCollapsedIds = () => JSON.parse(sessionStorage.getItem('collapsedIds')) || []
+const setCollapsedIds = (list) => sessionStorage.setItem('collapsedIds', JSON.stringify(list))
+
+module.exports = {
+    getVisible,
+    hideCategory,
+    showCategory,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    setSort,
+    getSortDirection,
+    setSortDirection,
+    getCollapsedCategory,
+    possibleFilters,
+}
+
+},{}]},{},[4]);
+    </script>
+  </footer>
+</html>

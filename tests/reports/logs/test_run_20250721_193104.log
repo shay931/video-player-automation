@@ -1,0 +1,76 @@
+2025-07-21 19:31:04,416 - TestRunner - INFO - 
+============================================================
+2025-07-21 19:31:04,416 - TestRunner - INFO - TEST STARTED: test_send_play_event
+2025-07-21 19:31:04,418 - TestRunner - INFO - Step 1: Prepare play event data
+2025-07-21 19:31:04,419 - TestRunner - INFO - Step 2: Send play event to API
+2025-07-21 19:31:04,436 - TestRunner - INFO - Step 3: Validate response status
+2025-07-21 19:31:04,446 - TestRunner - INFO - Step 4: Validate response body
+2025-07-21 19:31:04,455 - TestRunner - INFO - TEST ENDED: test_send_play_event
+2025-07-21 19:31:04,457 - TestRunner - INFO - ============================================================
+
+2025-07-21 19:31:04,461 - TestRunner - INFO - 
+============================================================
+2025-07-21 19:31:04,461 - TestRunner - INFO - TEST STARTED: test_send_pause_event
+2025-07-21 19:31:04,462 - TestRunner - INFO - Step 1: Send pause event
+2025-07-21 19:31:04,469 - TestRunner - INFO - Step 2: Validate response
+2025-07-21 19:31:04,480 - TestRunner - INFO - TEST ENDED: test_send_pause_event
+2025-07-21 19:31:04,480 - TestRunner - INFO - ============================================================
+
+2025-07-21 19:31:04,483 - TestRunner - INFO - 
+============================================================
+2025-07-21 19:31:04,484 - TestRunner - INFO - TEST STARTED: test_send_seeked_event
+2025-07-21 19:31:04,485 - TestRunner - INFO - Step 1: Send seeked event
+2025-07-21 19:31:04,493 - TestRunner - INFO - Step 2: Validate response
+2025-07-21 19:31:04,499 - TestRunner - INFO - TEST ENDED: test_send_seeked_event
+2025-07-21 19:31:04,501 - TestRunner - INFO - ============================================================
+
+2025-07-21 19:31:04,504 - TestRunner - INFO - 
+============================================================
+2025-07-21 19:31:04,504 - TestRunner - INFO - TEST STARTED: test_send_scroll_event
+2025-07-21 19:31:04,507 - TestRunner - INFO - Step 1: Send scroll event
+2025-07-21 19:31:04,513 - TestRunner - INFO - Step 2: Validate response
+2025-07-21 19:31:04,518 - TestRunner - INFO - TEST ENDED: test_send_scroll_event
+2025-07-21 19:31:04,519 - TestRunner - INFO - ============================================================
+
+2025-07-21 19:31:04,521 - TestRunner - INFO - 
+============================================================
+2025-07-21 19:31:04,521 - TestRunner - INFO - TEST STARTED: test_all_required_fields
+2025-07-21 19:31:04,523 - TestRunner - INFO - Step 1: Create complete event structure
+2025-07-21 19:31:04,524 - TestRunner - INFO -    Event data: {'userId': 'user-123', 'type': 'play', 'videoTime': 12.345, 'timestamp': '2025-07-21T19:30:45.123Z'}
+2025-07-21 19:31:04,524 - TestRunner - INFO - Step 2: Send event
+2025-07-21 19:31:04,531 - TestRunner - INFO - Step 3: Validate response
+2025-07-21 19:31:04,538 - TestRunner - INFO - TEST ENDED: test_all_required_fields
+2025-07-21 19:31:04,540 - TestRunner - INFO - ============================================================
+
+2025-07-21 19:31:04,544 - TestRunner - INFO - 
+============================================================
+2025-07-21 19:31:04,544 - TestRunner - INFO - TEST STARTED: test_different_user_ids
+2025-07-21 19:31:04,546 - TestRunner - INFO - Step 1: Test multiple user IDs
+2025-07-21 19:31:04,547 - TestRunner - INFO -    1. Testing user: user-123
+2025-07-21 19:31:04,554 - TestRunner - INFO -    2. Testing user: user-456
+2025-07-21 19:31:04,564 - TestRunner - INFO -    3. Testing user: test-user
+2025-07-21 19:31:04,572 - TestRunner - INFO -    4. Testing user: admin
+2025-07-21 19:31:04,593 - TestRunner - INFO - TEST ENDED: test_different_user_ids
+2025-07-21 19:31:04,594 - TestRunner - INFO - ============================================================
+
+2025-07-21 19:31:04,596 - TestRunner - INFO - 
+============================================================
+2025-07-21 19:31:04,598 - TestRunner - INFO - TEST STARTED: test_various_video_times
+2025-07-21 19:31:04,600 - TestRunner - INFO - Step 1: Test various video times
+2025-07-21 19:31:04,600 - TestRunner - INFO -    1. Testing time: 0.0s
+2025-07-21 19:31:04,612 - TestRunner - INFO -    2. Testing time: 0.5s
+2025-07-21 19:31:04,619 - TestRunner - INFO -    3. Testing time: 10.0s
+2025-07-21 19:31:04,629 - TestRunner - INFO -    4. Testing time: 59.999s
+2025-07-21 19:31:04,636 - TestRunner - INFO -    5. Testing time: 120.5s
+2025-07-21 19:31:04,645 - TestRunner - INFO -    6. Testing time: 3600.0s
+2025-07-21 19:31:04,667 - TestRunner - INFO - TEST ENDED: test_various_video_times
+2025-07-21 19:31:04,667 - TestRunner - INFO - ============================================================
+
+2025-07-21 19:31:04,671 - TestRunner - INFO - 
+============================================================
+2025-07-21 19:31:04,672 - TestRunner - INFO - TEST STARTED: test_rapid_events
+2025-07-21 19:31:04,675 - TestRunner - INFO - Step 1: Send 10 events rapidly
+2025-07-21 19:31:04,718 - TestRunner - INFO - Step 2: Validate all events sent
+2025-07-21 19:31:04,729 - TestRunner - INFO - TEST ENDED: test_rapid_events
+2025-07-21 19:31:04,730 - TestRunner - INFO - ============================================================
+

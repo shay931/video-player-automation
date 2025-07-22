@@ -1,0 +1,80 @@
+2025-07-21 19:27:04,023 - TestRunner - INFO - Setting up WebDriver...
+2025-07-21 19:27:04,023 - WDM - INFO - ====== WebDriver manager ======
+2025-07-21 19:27:05,870 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-21 19:27:07,389 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-21 19:27:08,921 - WDM - INFO - Driver [C:\Users\Home\.wdm\drivers\chromedriver\win64\138.0.7204.157\chromedriver-win32/chromedriver.exe] found in cache
+2025-07-21 19:27:10,933 - TestRunner - INFO - WebDriver ready
+2025-07-21 19:27:10,934 - TestRunner - INFO - 
+============================================================
+2025-07-21 19:27:10,935 - TestRunner - INFO - TEST STARTED: test_play_button
+2025-07-21 19:27:10,937 - TestRunner - INFO - Step 1: Click play button
+2025-07-21 19:27:11,469 - TestRunner - INFO - Step 2: Wait for event to be sent
+2025-07-21 19:27:12,470 - TestRunner - INFO - Step 3: Verify video is playing
+2025-07-21 19:27:12,540 - TestRunner - INFO - Step 4: Check play events
+2025-07-21 19:27:12,576 - TestRunner - INFO - Step 5: Validate event structure
+2025-07-21 19:27:12,601 - TestRunner - INFO - TEST ENDED: test_play_button
+2025-07-21 19:27:12,602 - TestRunner - INFO - ============================================================
+
+2025-07-21 19:27:12,603 - TestRunner - INFO - Closing WebDriver
+2025-07-21 19:27:19,121 - TestRunner - INFO - Setting up WebDriver...
+2025-07-21 19:27:19,122 - WDM - INFO - ====== WebDriver manager ======
+2025-07-21 19:27:21,106 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-21 19:27:22,644 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-21 19:27:24,274 - WDM - INFO - Driver [C:\Users\Home\.wdm\drivers\chromedriver\win64\138.0.7204.157\chromedriver-win32/chromedriver.exe] found in cache
+2025-07-21 19:27:26,252 - TestRunner - INFO - WebDriver ready
+2025-07-21 19:27:26,253 - TestRunner - INFO - 
+============================================================
+2025-07-21 19:27:26,254 - TestRunner - INFO - TEST STARTED: test_pause_button
+2025-07-21 19:27:26,257 - TestRunner - INFO - Step 1: Play video first
+2025-07-21 19:27:27,791 - TestRunner - INFO - Step 2: Clear previous events
+2025-07-21 19:27:27,822 - TestRunner - INFO - Step 3: Click pause button
+2025-07-21 19:27:29,361 - TestRunner - INFO - Step 4: Verify video is paused
+2025-07-21 19:27:29,378 - TestRunner - INFO - Step 5: Check pause events
+2025-07-21 19:27:29,408 - TestRunner - WARNING - BUG FOUND: Pause sends 'play' event instead of 'pause'
+2025-07-21 19:27:29,409 - TestRunner - WARNING -    Events captured: [{'timestamp': '2025-07-21T16:27:27.845Z', 'type': 'play', 'userId': 'user-123', 'videoTime': 1.023317}]
+2025-07-21 19:27:29,444 - TestRunner - INFO - TEST ENDED: test_pause_button
+2025-07-21 19:27:29,445 - TestRunner - INFO - ============================================================
+
+2025-07-21 19:27:29,445 - TestRunner - INFO - Closing WebDriver
+2025-07-21 19:27:36,025 - TestRunner - INFO - Setting up WebDriver...
+2025-07-21 19:27:36,026 - WDM - INFO - ====== WebDriver manager ======
+2025-07-21 19:27:37,876 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-21 19:27:39,435 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-21 19:27:40,978 - WDM - INFO - Driver [C:\Users\Home\.wdm\drivers\chromedriver\win64\138.0.7204.157\chromedriver-win32/chromedriver.exe] found in cache
+2025-07-21 19:27:42,970 - TestRunner - INFO - WebDriver ready
+2025-07-21 19:27:42,970 - TestRunner - INFO - 
+============================================================
+2025-07-21 19:27:42,970 - TestRunner - INFO - TEST STARTED: test_seek_control
+2025-07-21 19:27:42,972 - TestRunner - INFO - Step 1: Play video
+2025-07-21 19:27:44,500 - TestRunner - INFO - Step 2: Get video duration
+2025-07-21 19:27:44,514 - TestRunner - INFO -    Video duration: 10.0 seconds
+2025-07-21 19:27:44,514 - TestRunner - INFO - Step 3: Clear events and seek to 10 seconds
+2025-07-21 19:27:46,039 - TestRunner - INFO - Step 4: Verify seek worked
+2025-07-21 19:27:46,054 - TestRunner - INFO - Step 5: Check seeked events
+2025-07-21 19:27:46,068 - TestRunner - INFO - Step 6: Test seek to end
+2025-07-21 19:27:47,649 - TestRunner - INFO - TEST ENDED: test_seek_control
+2025-07-21 19:27:47,649 - TestRunner - INFO - ============================================================
+
+2025-07-21 19:27:47,651 - TestRunner - INFO - Closing WebDriver
+2025-07-21 19:27:54,083 - TestRunner - INFO - Setting up WebDriver...
+2025-07-21 19:27:54,084 - WDM - INFO - ====== WebDriver manager ======
+2025-07-21 19:27:56,026 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-21 19:27:57,561 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-21 19:27:59,096 - WDM - INFO - Driver [C:\Users\Home\.wdm\drivers\chromedriver\win64\138.0.7204.157\chromedriver-win32/chromedriver.exe] found in cache
+2025-07-21 19:28:01,227 - TestRunner - INFO - WebDriver ready
+2025-07-21 19:28:01,228 - TestRunner - INFO - 
+============================================================
+2025-07-21 19:28:01,228 - TestRunner - INFO - TEST STARTED: test_scroll_event
+2025-07-21 19:28:01,230 - TestRunner - INFO - Step 1: Add content to make page scrollable
+2025-07-21 19:28:01,748 - TestRunner - INFO - Step 2: Scroll to top
+2025-07-21 19:28:03,269 - TestRunner - INFO - Step 3: Clear events and scroll down
+2025-07-21 19:28:04,802 - TestRunner - INFO - Step 4: Check initial scroll events
+2025-07-21 19:28:04,823 - TestRunner - INFO -    Scroll events after first scroll: 1
+2025-07-21 19:28:04,823 - TestRunner - INFO - Step 5: Scroll more
+2025-07-21 19:28:06,367 - TestRunner - INFO -    Total scroll events: 2
+2025-07-21 19:28:06,367 - TestRunner - INFO - Step 6: Validate scroll event structure
+2025-07-21 19:28:06,374 - TestRunner - INFO - Step 7: Test scroll to video
+2025-07-21 19:28:07,967 - TestRunner - INFO - TEST ENDED: test_scroll_event
+2025-07-21 19:28:07,969 - TestRunner - INFO - ============================================================
+
+2025-07-21 19:28:07,969 - TestRunner - INFO - Closing WebDriver

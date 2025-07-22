@@ -1,0 +1,14 @@
+2025-07-21 19:42:00,655 - TestRunner - INFO - Setting up CHROME WebDriver...
+2025-07-21 19:42:00,655 - WDM - INFO - ====== WebDriver manager ======
+2025-07-21 19:42:02,558 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-21 19:42:04,099 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-21 19:42:05,646 - WDM - INFO - Driver [C:\Users\Home\.wdm\drivers\chromedriver\win64\138.0.7204.157\chromedriver-win32/chromedriver.exe] found in cache
+2025-07-21 19:42:07,701 - TestRunner - INFO - CHROME WebDriver ready
+2025-07-21 19:42:07,703 - TestRunner - INFO - 
+============================================================
+2025-07-21 19:42:07,703 - TestRunner - INFO - TEST STARTED: test_play_button[chrome]
+2025-07-21 19:42:07,704 - TestRunner - INFO - BROWSER: CHROME
+2025-07-21 19:42:07,724 - TestRunner - INFO - TEST ENDED: test_play_button[chrome]
+2025-07-21 19:42:07,731 - TestRunner - INFO - ============================================================
+
+2025-07-21 19:42:07,734 - TestRunner - INFO - Closing CHROME WebDriver

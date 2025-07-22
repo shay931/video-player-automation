@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="eab57b9e-d2a7-4b5d-9718-755bfd02b2a0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/video-player-automation.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="3094ZE3iGwr0lT4iO0M2zzXMtRo" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Python tests for test_api.TestAPIPositive.test_all_required_fields.executor": "Run",
+    "Python tests.Python tests for test_api.TestAPIPositive.test_different_user_ids.executor": "Debug",
+    "Python tests.Python tests for test_api.TestAPIPositive.test_rapid_events.executor": "Run",
+    "Python tests.Python tests for test_api.TestAPIPositive.test_send_pause_event.executor": "Debug",
+    "Python tests.Python tests for test_api.TestAPIPositive.test_send_play_event.executor": "Debug",
+    "Python tests.Python tests for test_api.TestAPIPositive.test_send_scroll_event.executor": "Debug",
+    "Python tests.Python tests for test_api.TestAPIPositive.test_send_seeked_event.executor": "Debug",
+    "Python tests.Python tests for test_api.TestAPIPositive.test_various_video_times.executor": "Run",
+    "Python tests.Python tests for test_api_negative.TestAPINegative.executor": "Run",
+    "Python tests.Python tests for test_api_negative.TestAPINegative.test_empty_payload.executor": "Debug",
+    "Python tests.Python tests for test_api_negative.TestAPINegative.test_extra_fields.executor": "Debug",
+    "Python tests.Python tests for test_api_negative.TestAPINegative.test_huge_payload.executor": "Debug",
+    "Python tests.Python tests for test_api_negative.TestAPINegative.test_invalid_event_type.executor": "Debug",
+    "Python tests.Python tests for test_api_negative.TestAPINegative.test_malformed_json.executor": "Debug",
+    "Python tests.Python tests for test_api_negative.TestAPINegative.test_malformed_timestamp.executor": "Debug",
+    "Python tests.Python tests for test_api_negative.TestAPINegative.test_missing_timestamp.executor": "Debug",
+    "Python tests.Python tests for test_api_negative.TestAPINegative.test_missing_type.executor": "Debug",
+    "Python tests.Python tests for test_api_negative.TestAPINegative.test_missing_user_id.executor": "Debug",
+    "Python tests.Python tests for test_api_negative.TestAPINegative.test_missing_video_time.executor": "Debug",
+    "Python tests.Python tests for test_api_negative.TestAPINegative.test_negative_video_time.executor": "Debug",
+    "Python tests.Python tests for test_api_negative.TestAPINegative.test_null_values.executor": "Debug",
+    "Python tests.Python tests for test_api_negative.TestAPINegative.test_special_characters.executor": "Debug",
+    "Python tests.Python tests for test_api_negative.TestAPINegative.test_wrong_content_type.executor": "Debug",
+    "Python tests.Python tests for test_api_negative.TestAPINegative.test_wrong_type_video_time.executor": "Debug",
+    "Python tests.Python tests for test_api_positive.TestAPIPositive.executor": "Run",
+    "Python tests.Python tests for test_api_positive.TestAPIPositive.test_send_play_event.executor": "Run",
+    "Python tests.Python tests for test_video.TestPlay.test_play_button_sends_event.executor": "Run",
+    "Python tests.Python tests for test_video.TestVideoPlayer.executor": "Run",
+    "Python tests.Python tests for test_video.TestVideoPlayer.test_pause_button.executor": "Run",
+    "Python tests.Python tests for test_video.TestVideoPlayer.test_play_button.executor": "Run",
+    "Python tests.Python tests for test_video.TestVideoPlayer.test_scroll_event.executor": "Run",
+    "Python tests.Python tests for test_video.TestVideoPlayer.test_seek_control.executor": "Run",
+    "Python tests.Python tests in test_api_positive.py.executor": "Run",
+    "Python tests.Python tests in test_video.py.executor": "Run",
+    "Python.Unnamed.executor": "Run",
+    "Python.test_video.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/work/video-player-automation/video-player-automation",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  }
+}]]></component>
+  <component name="RunManager" selected="Python tests.Python tests for test_video.TestVideoPlayer">
+    <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="video-player-automation" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (video-player-automation)" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_api_negative.TestAPINegative" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="video-player-automation" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_api_negative.TestAPINegative&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_api_negative.TestAPINegative.test_special_characters" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="video-player-automation" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_api_negative.TestAPINegative.test_special_characters&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_api_positive.TestAPIPositive" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="video-player-automation" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_api_positive.TestAPIPositive&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_api_positive.TestAPIPositive.test_send_play_event" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="video-player-automation" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_api_positive.TestAPIPositive.test_send_play_event&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_video.TestVideoPlayer" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="video-player-automation" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_video.TestVideoPlayer&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.Unnamed" />
+      <item itemvalue="Python tests.Python tests for test_api_positive.TestAPIPositive" />
+      <item itemvalue="Python tests.Python tests for test_api_positive.TestAPIPositive.test_send_play_event" />
+      <item itemvalue="Python tests.Python tests for test_video.TestVideoPlayer" />
+      <item itemvalue="Python tests.Python tests for test_api_negative.TestAPINegative" />
+      <item itemvalue="Python tests.Python tests for test_api_negative.TestAPINegative.test_special_characters" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests for test_video.TestVideoPlayer" />
+        <item itemvalue="Python tests.Python tests for test_api_positive.TestAPIPositive" />
+        <item itemvalue="Python tests.Python tests for test_api_negative.TestAPINegative" />
+        <item itemvalue="Python tests.Python tests for test_api_positive.TestAPIPositive.test_send_play_event" />
+        <item itemvalue="Python tests.Python tests for test_api_negative.TestAPINegative.test_special_characters" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-5b207ade9991-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.17890.14" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eab57b9e-d2a7-4b5d-9718-755bfd02b2a0" name="Changes" comment="" />
+      <created>1753026508633</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1753026508633</updated>
+    </task>
+    <servers />
+  </component>
+</project>
