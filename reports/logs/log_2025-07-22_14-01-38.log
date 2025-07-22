@@ -1,0 +1,7 @@
+2025-07-22 14:01:42,924 - INFO - Setting up Chrome driver...
+2025-07-22 14:01:42,924 - INFO - ====== WebDriver manager ======
+2025-07-22 14:01:45,114 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-22 14:01:46,367 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-22 14:01:47,541 - INFO - Driver [C:\Users\Home\.wdm\drivers\chromedriver\win64\138.0.7204.157\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2025-07-22 14:01:47,541 - INFO - Chrome driver path: C:\Users\Home\.wdm\drivers\chromedriver\win64\138.0.7204.157\chromedriver-win32/chromedriver.exe
+2025-07-22 14:02:56,945 - INFO - Closing chrome driver...

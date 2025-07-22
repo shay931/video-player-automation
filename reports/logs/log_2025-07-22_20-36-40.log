@@ -1,0 +1,16 @@
+2025-07-22 20:36:40,597 - INFO - Step 1: Create event without userId
+2025-07-22 20:36:40,597 - INFO - Step 2: Send invalid event
+2025-07-22 20:36:40,702 - INFO - Step 1: Create event without type
+2025-07-22 20:36:40,703 - INFO - Step 2: Send and validate
+2025-07-22 20:36:40,710 - INFO - Testing missing videoTime
+2025-07-22 20:36:40,718 - INFO - Testing missing timestamp
+2025-07-22 20:36:40,727 - INFO - Testing empty payload
+2025-07-22 20:36:40,734 - INFO - Testing null values
+2025-07-22 20:36:40,742 - INFO - Testing wrong type for videoTime
+2025-07-22 20:36:40,749 - INFO - Testing negative videoTime
+2025-07-22 20:36:40,760 - INFO - Testing invalid event type
+2025-07-22 20:36:40,768 - INFO - Testing malformed timestamp
+2025-07-22 20:36:40,777 - INFO - Testing extra fields
+2025-07-22 20:36:40,785 - INFO - Testing wrong content type
+2025-07-22 20:36:40,794 - WARNING -    Wrong content type response: 200
+2025-07-22 20:36:40,798 - INFO - Testing special characters

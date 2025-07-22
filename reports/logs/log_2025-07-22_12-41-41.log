@@ -1,0 +1,65 @@
+2025-07-22 12:41:41,203 - INFO - Setting up Chrome driver...
+2025-07-22 12:41:41,204 - INFO - ====== WebDriver manager ======
+2025-07-22 12:41:42,298 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-22 12:41:43,436 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-22 12:41:44,560 - INFO - Driver [C:\Users\Home\.wdm\drivers\chromedriver\win64\138.0.7204.157\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2025-07-22 12:41:44,561 - INFO - Chrome driver path: C:\Users\Home\.wdm\drivers\chromedriver\win64\138.0.7204.157\chromedriver-win32/chromedriver.exe
+2025-07-22 12:41:46,407 - INFO - [CHROME] Step 1: Click play button
+2025-07-22 12:41:46,932 - INFO - [CHROME] Step 2: Wait for event to be sent
+2025-07-22 12:41:47,934 - INFO - [CHROME] Step 3: Verify video is playing
+2025-07-22 12:41:47,961 - INFO - [CHROME] Step 4: Check play events
+2025-07-22 12:41:47,974 - INFO - [CHROME] Step 5: Validate event structure
+2025-07-22 12:41:47,991 - INFO - Closing chrome driver...
+2025-07-22 12:41:54,315 - INFO - Setting up Firefox driver...
+2025-07-22 12:41:54,316 - INFO - Found Firefox at: C:\Program Files\Mozilla Firefox\firefox.exe
+2025-07-22 12:41:54,317 - INFO - ====== WebDriver manager ======
+2025-07-22 12:41:55,454 - INFO - Get LATEST geckodriver version for 140.0 firefox
+2025-07-22 12:41:56,114 - INFO - Get LATEST geckodriver version for 140.0 firefox
+2025-07-22 12:41:56,595 - INFO - Driver [C:\Users\Home\.wdm\drivers\geckodriver\win64\v0.36.0\geckodriver.exe] found in cache
+2025-07-22 12:42:04,825 - INFO - [FIREFOX] Step 1: Click play button
+2025-07-22 12:42:05,353 - INFO - [FIREFOX] Step 2: Wait for event to be sent
+2025-07-22 12:42:06,354 - INFO - [FIREFOX] Step 3: Verify video is playing
+2025-07-22 12:42:06,358 - INFO - [FIREFOX] Step 4: Check play events
+2025-07-22 12:42:06,367 - INFO - [FIREFOX] Step 5: Validate event structure
+2025-07-22 12:42:06,381 - INFO - Closing firefox driver...
+2025-07-22 12:42:13,703 - INFO - Setting up Chrome driver...
+2025-07-22 12:42:13,704 - INFO - ====== WebDriver manager ======
+2025-07-22 12:42:14,754 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-22 12:42:15,899 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-22 12:42:17,031 - INFO - Driver [C:\Users\Home\.wdm\drivers\chromedriver\win64\138.0.7204.157\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2025-07-22 12:42:17,032 - INFO - Chrome driver path: C:\Users\Home\.wdm\drivers\chromedriver\win64\138.0.7204.157\chromedriver-win32/chromedriver.exe
+2025-07-22 12:42:18,630 - INFO - [CHROME] Step 1: Play video first
+2025-07-22 12:42:20,170 - INFO - [CHROME] Step 2: Clear previous events
+2025-07-22 12:42:20,181 - INFO - [CHROME] Step 3: Click pause button
+2025-07-22 12:42:21,693 - INFO - [CHROME] Step 4: Verify video is paused
+2025-07-22 12:42:21,705 - INFO - [CHROME] Step 5: Check pause events
+2025-07-22 12:42:21,724 - WARNING - [CHROME] BUG FOUND: Pause sends 'play' event instead of 'pause'
+2025-07-22 12:42:21,724 - WARNING - [CHROME] Events captured: [{'timestamp': '2025-07-22T09:42:20.190Z', 'type': 'play', 'userId': 'user-123', 'videoTime': 1.298491}]
+2025-07-22 12:42:21,749 - INFO - Closing chrome driver...
+2025-07-22 12:42:28,193 - INFO - Setting up Firefox driver...
+2025-07-22 12:42:28,195 - INFO - Found Firefox at: C:\Program Files\Mozilla Firefox\firefox.exe
+2025-07-22 12:42:28,195 - INFO - ====== WebDriver manager ======
+2025-07-22 12:42:29,348 - INFO - Get LATEST geckodriver version for 140.0 firefox
+2025-07-22 12:42:30,014 - INFO - Get LATEST geckodriver version for 140.0 firefox
+2025-07-22 12:42:30,524 - INFO - Driver [C:\Users\Home\.wdm\drivers\geckodriver\win64\v0.36.0\geckodriver.exe] found in cache
+2025-07-22 12:42:38,698 - INFO - [FIREFOX] Step 1: Play video first
+2025-07-22 12:42:40,233 - INFO - [FIREFOX] Step 2: Clear previous events
+2025-07-22 12:42:40,238 - INFO - [FIREFOX] Step 3: Click pause button
+2025-07-22 12:42:41,749 - INFO - [FIREFOX] Step 4: Verify video is paused
+2025-07-22 12:42:41,769 - INFO - [FIREFOX] Step 5: Check pause events
+2025-07-22 12:42:41,783 - WARNING - [FIREFOX] BUG FOUND: Pause sends 'play' event instead of 'pause'
+2025-07-22 12:42:41,783 - WARNING - [FIREFOX] Events captured: [{'timestamp': '2025-07-22T09:42:40.245Z', 'type': 'play', 'userId': 'user-123', 'videoTime': 0.993291}]
+2025-07-22 12:42:41,796 - INFO - Closing firefox driver...
+2025-07-22 12:42:48,789 - INFO - Setting up Chrome driver...
+2025-07-22 12:42:48,789 - INFO - ====== WebDriver manager ======
+2025-07-22 12:42:49,801 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-22 12:42:50,925 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-22 12:42:52,030 - INFO - Driver [C:\Users\Home\.wdm\drivers\chromedriver\win64\138.0.7204.157\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2025-07-22 12:42:52,030 - INFO - Chrome driver path: C:\Users\Home\.wdm\drivers\chromedriver\win64\138.0.7204.157\chromedriver-win32/chromedriver.exe
+2025-07-22 12:42:53,708 - INFO - [CHROME] Step 1: Play video
+2025-07-22 12:42:55,241 - INFO - [CHROME] Step 2: Get video duration
+2025-07-22 12:42:55,252 - INFO - [CHROME] Video duration: 10.0 seconds
+2025-07-22 12:42:55,252 - INFO - [CHROME] Step 3: Clear events and seek to 10 seconds
+2025-07-22 12:42:56,777 - INFO - [CHROME] Step 4: Verify seek worked
+2025-07-22 12:42:56,787 - INFO - [CHROME] Step 5: Check seeked events
+2025-07-22 12:42:56,805 - INFO - Closing chrome driver...

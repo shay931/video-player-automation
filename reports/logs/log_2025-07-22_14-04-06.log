@@ -1,0 +1,14 @@
+2025-07-22 14:04:07,255 - INFO - Setting up Chrome driver...
+2025-07-22 14:04:07,255 - INFO - ====== WebDriver manager ======
+2025-07-22 14:04:08,286 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-22 14:04:09,449 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-22 14:04:10,603 - INFO - Driver [C:\Users\Home\.wdm\drivers\chromedriver\win64\138.0.7204.157\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2025-07-22 14:04:10,603 - INFO - Chrome driver path: C:\Users\Home\.wdm\drivers\chromedriver\win64\138.0.7204.157\chromedriver-win32/chromedriver.exe
+2025-07-22 14:04:12,168 - INFO - Closing chrome driver...
+2025-07-22 14:04:18,552 - INFO - Setting up Firefox driver...
+2025-07-22 14:04:18,553 - INFO - Found Firefox at: C:\Program Files\Mozilla Firefox\firefox.exe
+2025-07-22 14:04:18,554 - INFO - ====== WebDriver manager ======
+2025-07-22 14:04:19,737 - INFO - Get LATEST geckodriver version for 140.0 firefox
+2025-07-22 14:04:20,426 - INFO - Get LATEST geckodriver version for 140.0 firefox
+2025-07-22 14:04:20,889 - INFO - Driver [C:\Users\Home\.wdm\drivers\geckodriver\win64\v0.36.0\geckodriver.exe] found in cache
+2025-07-22 14:04:27,956 - INFO - Closing firefox driver...

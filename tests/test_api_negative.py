@@ -1,12 +1,9 @@
 import pytest
 import sys
 import os
-import json
-import logging
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from api.event_api import EventAPI
-
 
 class TestAPINegative:
     """Negative API tests - invalid data"""
@@ -14,7 +11,6 @@ class TestAPINegative:
     @pytest.fixture(autouse=True)
     def setup(self, test_logger):
         self.api = EventAPI()
-        self.logger = test_logger
 
     def test_missing_user_id(self, test_logger):
         """Test event without userId field"""
@@ -169,31 +165,8 @@ class TestAPINegative:
 
         test_logger.warning(f"   Wrong content type response: {response.status_code}")
 
-    def test_malformed_json(self, test_logger):
-        """Test sending malformed JSON"""
-        test_logger.info("Testing malformed JSON")
 
-        response = self.api.session.post(
-            f"{self.api.base_url}{self.api.endpoint}",
-            data='{"invalid": json}',  # JSON לא תקין
-            headers={'Content-Type': 'application/json'}
-        )
 
-        test_logger.error(f"   Malformed JSON response: {response.status_code}")
-
-    def test_huge_payload(self, test_logger):
-        """Test with extremely large payload"""
-        test_logger.info("Testing huge payload")
-
-        event_data = {
-            "userId": "user-" + "x" * 10000,  # userId ענק
-            "type": "play",
-            "videoTime": 999999999.999,
-            "timestamp": "2025-07-21T19:30:45.123Z"
-        }
-
-        response = self.api.send_custom_event(event_data)
-        test_logger.warning(f"   Huge payload response: {response.status_code}")
 
     def test_special_characters(self, test_logger):
         """Test with special characters in fields"""

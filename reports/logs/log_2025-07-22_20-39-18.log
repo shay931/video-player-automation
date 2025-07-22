@@ -1,0 +1,19 @@
+2025-07-22 20:39:19,050 - INFO - Step 1: Send play event to API
+2025-07-22 20:39:19,058 - INFO - Step 2: Validate response status
+2025-07-22 20:39:19,065 - INFO - Step 3: Validate response body
+2025-07-22 20:39:19,079 - INFO - Step 1: Send pause event
+2025-07-22 20:39:19,083 - INFO - Step 2: Validate response
+2025-07-22 20:39:19,093 - INFO - Step 1: Send seeked event
+2025-07-22 20:39:19,096 - INFO - Step 2: Validate response
+2025-07-22 20:39:19,103 - INFO - Step 1: Send scroll event
+2025-07-22 20:39:19,107 - INFO - Step 2: Validate response
+2025-07-22 20:39:19,119 - INFO - Step 1: Create complete event structure
+2025-07-22 20:39:19,120 - INFO -    Event data: {'userId': 'user-123', 'type': 'play', 'videoTime': 12.345, 'timestamp': '2025-07-21T19:30:45.123Z'}
+2025-07-22 20:39:19,120 - INFO - Step 2: Send event
+2025-07-22 20:39:19,126 - INFO - Step 3: Validate response
+2025-07-22 20:39:19,137 - INFO - Step 1: Test various video times
+2025-07-22 20:39:19,137 - INFO -    1. Testing time: 0.0s
+2025-07-22 20:39:19,142 - INFO -    2. Testing time: 0.5s
+2025-07-22 20:39:19,146 - INFO -    3. Testing time: 3.0s
+2025-07-22 20:39:19,162 - INFO - Step 1: Send 10 events rapidly
+2025-07-22 20:39:19,180 - INFO - Step 2: Validate all events sent

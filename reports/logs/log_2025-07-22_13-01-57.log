@@ -1,0 +1,24 @@
+2025-07-22 13:01:58,054 - INFO - Setting up Chrome driver...
+2025-07-22 13:01:58,054 - INFO - ====== WebDriver manager ======
+2025-07-22 13:01:59,085 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-22 13:02:00,241 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-22 13:02:01,380 - INFO - Driver [C:\Users\Home\.wdm\drivers\chromedriver\win64\138.0.7204.157\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2025-07-22 13:02:01,381 - INFO - Chrome driver path: C:\Users\Home\.wdm\drivers\chromedriver\win64\138.0.7204.157\chromedriver-win32/chromedriver.exe
+2025-07-22 13:02:02,971 - INFO - [CHROME] Step 1: Click play button
+2025-07-22 13:02:03,500 - INFO - [CHROME] Step 2: Wait for event to be sent
+2025-07-22 13:02:04,501 - INFO - [CHROME] Step 3: Verify video is playing
+2025-07-22 13:02:04,516 - INFO - [CHROME] Step 4: Check play events
+2025-07-22 13:02:04,523 - INFO - [CHROME] Step 5: Validate event structure
+2025-07-22 13:02:04,533 - INFO - Closing chrome driver...
+2025-07-22 13:02:10,844 - INFO - Setting up Firefox driver...
+2025-07-22 13:02:10,845 - INFO - Found Firefox at: C:\Program Files\Mozilla Firefox\firefox.exe
+2025-07-22 13:02:10,846 - INFO - ====== WebDriver manager ======
+2025-07-22 13:02:12,015 - INFO - Get LATEST geckodriver version for 140.0 firefox
+2025-07-22 13:02:12,671 - INFO - Get LATEST geckodriver version for 140.0 firefox
+2025-07-22 13:02:13,139 - INFO - Driver [C:\Users\Home\.wdm\drivers\geckodriver\win64\v0.36.0\geckodriver.exe] found in cache
+2025-07-22 13:02:19,981 - INFO - [FIREFOX] Step 1: Click play button
+2025-07-22 13:02:20,487 - INFO - [FIREFOX] Step 2: Wait for event to be sent
+2025-07-22 13:02:21,488 - INFO - [FIREFOX] Step 3: Verify video is playing
+2025-07-22 13:02:21,500 - INFO - [FIREFOX] Step 4: Check play events
+2025-07-22 13:02:21,514 - INFO - [FIREFOX] Step 5: Validate event structure
+2025-07-22 13:02:21,527 - INFO - Closing firefox driver...

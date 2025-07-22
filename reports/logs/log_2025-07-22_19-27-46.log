@@ -1,0 +1,11 @@
+2025-07-22 19:27:47,719 - INFO - Setting up Chrome driver...
+2025-07-22 19:27:47,725 - INFO - ====== WebDriver manager ======
+2025-07-22 19:27:48,802 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-22 19:27:49,494 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-22 19:27:50,180 - INFO - Driver [C:\Users\Home\.wdm\drivers\chromedriver\win64\138.0.7204.157\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2025-07-22 19:27:50,180 - INFO - Chrome driver path: C:\Users\Home\.wdm\drivers\chromedriver\win64\138.0.7204.157\chromedriver-win32/chromedriver.exe
+2025-07-22 19:27:51,759 - INFO - [CHROME] Step 1: Click play button
+2025-07-22 19:27:52,296 - INFO - [CHROME] Step 2: Wait for event to be sent
+2025-07-22 19:27:53,298 - INFO - [CHROME] Step 3: Verify video is playing
+2025-07-22 19:28:54,224 - INFO - Screenshot saved: reports\screenshots\video not playing_2025-07-22_19-28-30.png
+2025-07-22 19:30:25,455 - INFO - Closing chrome driver...

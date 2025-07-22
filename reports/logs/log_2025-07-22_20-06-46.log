@@ -1,0 +1,29 @@
+2025-07-22 20:06:49,265 - INFO - Setting up Chrome driver...
+2025-07-22 20:06:49,265 - INFO - ====== WebDriver manager ======
+2025-07-22 20:06:50,391 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-22 20:06:51,064 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-22 20:06:51,767 - INFO - Driver [C:\Users\Home\.wdm\drivers\chromedriver\win64\138.0.7204.157\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2025-07-22 20:06:51,767 - INFO - Chrome driver path: C:\Users\Home\.wdm\drivers\chromedriver\win64\138.0.7204.157\chromedriver-win32/chromedriver.exe
+2025-07-22 20:06:53,287 - INFO - [CHROME] Step 1: Click play button
+2025-07-22 20:06:53,823 - INFO - [CHROME] Step 2: Wait for event to be sent
+2025-07-22 20:06:54,825 - INFO - [CHROME] Step 3: Verify video is playing
+2025-07-22 20:07:28,095 - INFO - Closing chrome driver...
+2025-07-22 20:07:30,280 - INFO - Setting up Firefox driver...
+2025-07-22 20:07:30,280 - INFO - ====== WebDriver manager ======
+2025-07-22 20:07:31,501 - INFO - Get LATEST geckodriver version for 140.0 firefox
+2025-07-22 20:07:32,169 - INFO - Get LATEST geckodriver version for 140.0 firefox
+2025-07-22 20:07:32,644 - INFO - Driver [C:\Users\Home\.wdm\drivers\geckodriver\win64\v0.36.0\geckodriver.exe] found in cache
+2025-07-22 20:07:39,461 - ERROR - Failed to setup firefox: Message: WebDriver session does not exist, or is not active
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+InvalidSessionIDError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:469:5
+assert.that/<@chrome://remote/content/shared/webdriver/Assert.sys.mjs:559:13
+assert.session@chrome://remote/content/shared/webdriver/Assert.sys.mjs:37:4
+despatch@chrome://remote/content/marionette/server.sys.mjs:315:19
+execute@chrome://remote/content/marionette/server.sys.mjs:289:16
+onPacket/<@chrome://remote/content/marionette/server.sys.mjs:262:20
+onPacket@chrome://remote/content/marionette/server.sys.mjs:263:9
+_onJSONObjectReady/<@chrome://remote/content/marionette/transport.sys.mjs:494:20
+
+2025-07-22 20:07:39,461 - INFO - Closing firefox driver...

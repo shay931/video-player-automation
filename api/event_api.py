@@ -1,13 +1,15 @@
 from datetime import datetime
-from api.base_api import BaseAPI
+import requests
 
 
-class EventAPI(BaseAPI):
+class EventAPI():
     """API class for event endpoint"""
 
-    def __init__(self):
+    def __init__(self,base_url="http://localhost:3000"):
         super().__init__()
         self.endpoint = "/api/event"
+        self.base_url = base_url
+        self.session = requests.Session()
 
     def send_event(self, event_type, video_time=0.0, user_id="user-123", timestamp=None):
         """Send event to API"""
@@ -29,23 +31,11 @@ class EventAPI(BaseAPI):
         response = self.post(self.endpoint, data)
         return response
 
-    def validate_response(self, response, expected_status=200):
-        """Validate API response"""
-        assert response.status_code == expected_status, \
-            f"Expected status {expected_status}, got {response.status_code}"
+    def post(self, endpoint, data=None, **kwargs):
+        """Send POST request"""
+        url = f"{self.base_url}{endpoint}"
+        response = self.session.post(url, json=data, **kwargs)
+        return response
 
-        # בדוק שיש response body
-        try:
-            body = response.json()
-            return body
-        except:
-            return None
 
-    def create_valid_event(self, event_type="play", video_time=10.5):
-        """Create valid event data"""
-        return {
-            "userId": "user-123",
-            "type": event_type,
-            "videoTime": video_time,
-            "timestamp": datetime.now().isoformat() + 'Z'
-        }
+

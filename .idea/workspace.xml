@@ -5,13 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eab57b9e-d2a7-4b5d-9718-755bfd02b2a0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/video-player-automation.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/base_api.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/event_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/event_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/base_page.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/video_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/video_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/reports/logs/test_run_20250721_192514.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/reports/logs/test_run_20250721_192703.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/reports/logs/test_run_20250721_192947.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/reports/logs/test_run_20250721_193104.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/reports/logs/test_run_20250721_194200.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/reports/logs/test_run_20250722_071051.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_api_negative.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_api_negative.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_api_positive.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_api_positive.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_video.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_video.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +65,7 @@
     "Python tests.Python tests for test_api_negative.TestAPINegative.test_malformed_timestamp.executor": "Debug",
     "Python tests.Python tests for test_api_negative.TestAPINegative.test_missing_timestamp.executor": "Debug",
     "Python tests.Python tests for test_api_negative.TestAPINegative.test_missing_type.executor": "Debug",
-    "Python tests.Python tests for test_api_negative.TestAPINegative.test_missing_user_id.executor": "Debug",
+    "Python tests.Python tests for test_api_negative.TestAPINegative.test_missing_user_id.executor": "Run",
     "Python tests.Python tests for test_api_negative.TestAPINegative.test_missing_video_time.executor": "Debug",
     "Python tests.Python tests for test_api_negative.TestAPINegative.test_negative_video_time.executor": "Debug",
     "Python tests.Python tests for test_api_negative.TestAPINegative.test_null_values.executor": "Debug",
@@ -64,24 +73,27 @@
     "Python tests.Python tests for test_api_negative.TestAPINegative.test_wrong_content_type.executor": "Debug",
     "Python tests.Python tests for test_api_negative.TestAPINegative.test_wrong_type_video_time.executor": "Debug",
     "Python tests.Python tests for test_api_positive.TestAPIPositive.executor": "Run",
+    "Python tests.Python tests for test_api_positive.TestAPIPositive.test_rapid_events.executor": "Run",
     "Python tests.Python tests for test_api_positive.TestAPIPositive.test_send_play_event.executor": "Run",
+    "Python tests.Python tests for test_api_positive.TestAPIPositive.test_send_seeked_event.executor": "Debug",
+    "Python tests.Python tests for test_api_positive.TestAPIPositive.test_various_video_times.executor": "Run",
     "Python tests.Python tests for test_video.TestPlay.test_play_button_sends_event.executor": "Run",
-    "Python tests.Python tests for test_video.TestVideoPlayer.executor": "Run",
+    "Python tests.Python tests for test_video.TestVideoPlayer.executor": "Debug",
     "Python tests.Python tests for test_video.TestVideoPlayer.test_pause_button.executor": "Run",
-    "Python tests.Python tests for test_video.TestVideoPlayer.test_play_button.executor": "Run",
-    "Python tests.Python tests for test_video.TestVideoPlayer.test_scroll_event.executor": "Run",
+    "Python tests.Python tests for test_video.TestVideoPlayer.test_play_button.executor": "Debug",
+    "Python tests.Python tests for test_video.TestVideoPlayer.test_scroll_event.executor": "Debug",
     "Python tests.Python tests for test_video.TestVideoPlayer.test_seek_control.executor": "Run",
     "Python tests.Python tests in test_api_positive.py.executor": "Run",
     "Python tests.Python tests in test_video.py.executor": "Run",
     "Python.Unnamed.executor": "Run",
     "Python.test_video.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/work/video-player-automation/video-player-automation",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
-  <component name="RunManager" selected="Python tests.Python tests for test_video.TestVideoPlayer">
+  <component name="RunManager" selected="Python tests.Python tests for test_api_negative.TestAPINegative">
     <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="video-player-automation" />
       <option name="ENV_FILES" value="" />
@@ -120,7 +132,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_api_negative.TestAPINegative.test_special_characters" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_api_negative.TestAPINegative.test_missing_user_id" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="video-player-automation" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -131,7 +143,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_api_negative.TestAPINegative.test_special_characters&quot;" />
+      <option name="_new_target" value="&quot;test_api_negative.TestAPINegative.test_missing_user_id&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -150,7 +162,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_api_positive.TestAPIPositive.test_send_play_event" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_api_positive.TestAPIPositive.test_rapid_events" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="video-player-automation" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -161,11 +173,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_api_positive.TestAPIPositive.test_send_play_event&quot;" />
+      <option name="_new_target" value="&quot;test_api_positive.TestAPIPositive.test_rapid_events&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_video.TestVideoPlayer" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_api_positive.TestAPIPositive.test_various_video_times" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="video-player-automation" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -176,25 +188,25 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_video.TestVideoPlayer&quot;" />
+      <option name="_new_target" value="&quot;test_api_positive.TestAPIPositive.test_various_video_times&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Python.Unnamed" />
+      <item itemvalue="Python tests.Python tests for test_api_negative.TestAPINegative.test_missing_user_id" />
+      <item itemvalue="Python tests.Python tests for test_api_positive.TestAPIPositive.test_rapid_events" />
+      <item itemvalue="Python tests.Python tests for test_api_positive.TestAPIPositive.test_various_video_times" />
       <item itemvalue="Python tests.Python tests for test_api_positive.TestAPIPositive" />
-      <item itemvalue="Python tests.Python tests for test_api_positive.TestAPIPositive.test_send_play_event" />
-      <item itemvalue="Python tests.Python tests for test_video.TestVideoPlayer" />
       <item itemvalue="Python tests.Python tests for test_api_negative.TestAPINegative" />
-      <item itemvalue="Python tests.Python tests for test_api_negative.TestAPINegative.test_special_characters" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_video.TestVideoPlayer" />
-        <item itemvalue="Python tests.Python tests for test_api_positive.TestAPIPositive" />
         <item itemvalue="Python tests.Python tests for test_api_negative.TestAPINegative" />
-        <item itemvalue="Python tests.Python tests for test_api_positive.TestAPIPositive.test_send_play_event" />
-        <item itemvalue="Python tests.Python tests for test_api_negative.TestAPINegative.test_special_characters" />
+        <item itemvalue="Python tests.Python tests for test_api_positive.TestAPIPositive" />
+        <item itemvalue="Python tests.Python tests for test_api_negative.TestAPINegative.test_missing_user_id" />
+        <item itemvalue="Python tests.Python tests for test_api_positive.TestAPIPositive.test_various_video_times" />
+        <item itemvalue="Python tests.Python tests for test_api_positive.TestAPIPositive.test_rapid_events" />
       </list>
     </recent_temporary>
   </component>
@@ -215,5 +227,31 @@
       <updated>1753026508633</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/test_video.py</url>
+          <line>229</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/test_video.py</url>
+          <line>116</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/test_api_positive.py</url>
+          <line>49</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/test_api_negative.py</url>
+          <line>71</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

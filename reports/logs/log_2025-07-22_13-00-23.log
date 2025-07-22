@@ -1,0 +1,28 @@
+2025-07-22 13:00:23,904 - INFO - Step 1: Prepare play event data
+2025-07-22 13:00:23,904 - INFO - Step 2: Send play event to API
+2025-07-22 13:00:23,913 - INFO - Step 3: Validate response status
+2025-07-22 13:00:23,922 - INFO - Step 4: Validate response body
+2025-07-22 13:00:23,934 - INFO - Step 1: Send pause event
+2025-07-22 13:00:23,942 - INFO - Step 2: Validate response
+2025-07-22 13:00:23,952 - INFO - Step 1: Send seeked event
+2025-07-22 13:00:23,956 - INFO - Step 2: Validate response
+2025-07-22 13:00:23,966 - INFO - Step 1: Send scroll event
+2025-07-22 13:00:23,969 - INFO - Step 2: Validate response
+2025-07-22 13:00:23,974 - INFO - Step 1: Create complete event structure
+2025-07-22 13:00:23,974 - INFO -    Event data: {'userId': 'user-123', 'type': 'play', 'videoTime': 12.345, 'timestamp': '2025-07-21T19:30:45.123Z'}
+2025-07-22 13:00:23,974 - INFO - Step 2: Send event
+2025-07-22 13:00:23,977 - INFO - Step 3: Validate response
+2025-07-22 13:00:23,985 - INFO - Step 1: Test multiple user IDs
+2025-07-22 13:00:23,986 - INFO -    1. Testing user: user-123
+2025-07-22 13:00:23,990 - INFO -    2. Testing user: user-456
+2025-07-22 13:00:23,993 - INFO -    3. Testing user: test-user
+2025-07-22 13:00:23,998 - INFO -    4. Testing user: admin
+2025-07-22 13:00:24,014 - INFO - Step 1: Test various video times
+2025-07-22 13:00:24,014 - INFO -    1. Testing time: 0.0s
+2025-07-22 13:00:24,023 - INFO -    2. Testing time: 0.5s
+2025-07-22 13:00:24,028 - INFO -    3. Testing time: 10.0s
+2025-07-22 13:00:24,033 - INFO -    4. Testing time: 59.999s
+2025-07-22 13:00:24,036 - INFO -    5. Testing time: 120.5s
+2025-07-22 13:00:24,040 - INFO -    6. Testing time: 3600.0s
+2025-07-22 13:00:24,051 - INFO - Step 1: Send 10 events rapidly
+2025-07-22 13:00:24,071 - INFO - Step 2: Validate all events sent

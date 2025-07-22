@@ -1,0 +1,30 @@
+2025-07-22 20:42:06,193 - INFO - Step 1: Create event without userId
+2025-07-22 20:42:06,194 - INFO - Step 2: Send invalid event
+2025-07-22 20:42:06,202 - INFO - Step 3: Validate server response
+2025-07-22 20:42:06,203 - WARNING -    Server accepts missing userId: 200
+2025-07-22 20:42:06,207 - INFO - Step 1: Create event without type
+2025-07-22 20:42:06,207 - INFO - Step 2: Send and validate
+2025-07-22 20:42:06,210 - WARNING -    Missing type response: 200
+2025-07-22 20:42:06,213 - INFO - Testing missing videoTime
+2025-07-22 20:42:06,216 - WARNING -    Missing videoTime response: 200
+2025-07-22 20:42:06,220 - INFO - Testing missing timestamp
+2025-07-22 20:42:06,223 - WARNING -    Missing timestamp response: 200
+2025-07-22 20:42:06,225 - INFO - Testing empty payload
+2025-07-22 20:42:06,228 - WARNING -    Empty payload response: 200
+2025-07-22 20:42:06,231 - INFO - Testing null values
+2025-07-22 20:42:06,234 - WARNING -    Null values response: 200
+2025-07-22 20:42:06,237 - INFO - Testing wrong type for videoTime
+2025-07-22 20:42:06,241 - WARNING -    Wrong videoTime type response: 200
+2025-07-22 20:42:06,244 - INFO - Testing negative videoTime
+2025-07-22 20:42:06,248 - WARNING -    Negative videoTime response: 200
+2025-07-22 20:42:06,251 - INFO - Testing invalid event type
+2025-07-22 20:42:06,254 - WARNING -    Invalid event type response: 200
+2025-07-22 20:42:06,257 - INFO - Testing malformed timestamp
+2025-07-22 20:42:06,261 - WARNING -    Malformed timestamp response: 200
+2025-07-22 20:42:06,264 - INFO - Testing extra fields
+2025-07-22 20:42:06,267 - INFO -    Extra fields response: 200
+2025-07-22 20:42:06,268 - INFO -    Server accepts extra fields: True
+2025-07-22 20:42:06,270 - INFO - Testing wrong content type
+2025-07-22 20:42:06,274 - WARNING -    Wrong content type response: 200
+2025-07-22 20:42:06,278 - INFO - Testing special characters
+2025-07-22 20:42:06,282 - INFO -    Special characters response: 200

@@ -1,0 +1,2 @@
+2025-07-22 15:08:57,585 - ERROR - Failed to setup chrome: get_chrome_driver() takes 0 positional arguments but 1 was given
+2025-07-22 15:08:57,778 - ERROR - Failed to setup firefox: get_firefox_driver() takes 0 positional arguments but 1 was given

@@ -1,0 +1,34 @@
+2025-07-22 13:00:14,130 - INFO - Step 1: Create event without userId
+2025-07-22 13:00:14,131 - INFO - Step 2: Send invalid event
+2025-07-22 13:00:14,139 - INFO - Step 3: Validate server response
+2025-07-22 13:00:14,139 - WARNING -    Server accepts missing userId: 200
+2025-07-22 13:00:14,142 - INFO - Step 1: Create event without type
+2025-07-22 13:00:14,143 - INFO - Step 2: Send and validate
+2025-07-22 13:00:14,146 - WARNING -    Missing type response: 200
+2025-07-22 13:00:14,149 - INFO - Testing missing videoTime
+2025-07-22 13:00:14,153 - WARNING -    Missing videoTime response: 200
+2025-07-22 13:00:14,157 - INFO - Testing missing timestamp
+2025-07-22 13:00:14,160 - WARNING -    Missing timestamp response: 200
+2025-07-22 13:00:14,162 - INFO - Testing empty payload
+2025-07-22 13:00:14,166 - WARNING -    Empty payload response: 200
+2025-07-22 13:00:14,169 - INFO - Testing null values
+2025-07-22 13:00:14,173 - WARNING -    Null values response: 200
+2025-07-22 13:00:14,175 - INFO - Testing wrong type for videoTime
+2025-07-22 13:00:14,179 - WARNING -    Wrong videoTime type response: 200
+2025-07-22 13:00:14,186 - INFO - Testing negative videoTime
+2025-07-22 13:00:14,194 - WARNING -    Negative videoTime response: 200
+2025-07-22 13:00:14,199 - INFO - Testing invalid event type
+2025-07-22 13:00:14,209 - WARNING -    Invalid event type response: 200
+2025-07-22 13:00:14,214 - INFO - Testing malformed timestamp
+2025-07-22 13:00:14,222 - WARNING -    Malformed timestamp response: 200
+2025-07-22 13:00:14,226 - INFO - Testing extra fields
+2025-07-22 13:00:14,230 - INFO -    Extra fields response: 200
+2025-07-22 13:00:14,230 - INFO -    Server accepts extra fields: True
+2025-07-22 13:00:14,235 - INFO - Testing wrong content type
+2025-07-22 13:00:14,240 - WARNING -    Wrong content type response: 200
+2025-07-22 13:00:14,244 - INFO - Testing malformed JSON
+2025-07-22 13:00:14,249 - ERROR -    Malformed JSON response: 400
+2025-07-22 13:00:14,253 - INFO - Testing huge payload
+2025-07-22 13:00:14,257 - WARNING -    Huge payload response: 200
+2025-07-22 13:00:14,259 - INFO - Testing special characters
+2025-07-22 13:00:14,263 - INFO -    Special characters response: 200

@@ -1,0 +1,10 @@
+2025-07-22 20:40:09,790 - INFO - Step 1: Send play event to API
+2025-07-22 20:40:09,887 - INFO - Step 1: Send pause event
+2025-07-22 20:40:09,896 - INFO - Step 1: Send seeked event
+2025-07-22 20:40:09,905 - INFO - Step 1: Send scroll event
+2025-07-22 20:40:09,914 - INFO - Step 1: Create complete event structure
+2025-07-22 20:40:09,914 - INFO -    Event data: {'userId': 'user-123', 'type': 'play', 'videoTime': 12.345, 'timestamp': '2025-07-21T19:30:45.123Z'}
+2025-07-22 20:40:09,914 - INFO - Step 2: Send event
+2025-07-22 20:40:09,923 - INFO - Step 1: Test various video times
+2025-07-22 20:40:09,924 - INFO -    1. Testing time: 0.0s
+2025-07-22 20:40:09,933 - INFO - Step 1: Send 10 events rapidly

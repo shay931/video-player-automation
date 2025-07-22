@@ -2,26 +2,22 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
-import sys
 import os
+import datetime
 
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from pages.base_page import BasePage
+class VideoPage():
+    def __init__(self,driver):
+        self.VIDEO = (By.ID, "video")
+        self.driver = driver
+
+        self.wait = WebDriverWait(self.driver, 10)
 
 
-class VideoPage(BasePage):
-    VIDEO = (By.ID, "video")
-
-    def load(self):
-        # כבר נטען ב-conftest
-        self.wait_for_video_ready()
 
     def wait_for_video_ready(self):
-        """חכה שהוידאו יהיה מוכן"""
-        WebDriverWait(self.driver, 10).until(
+        self.wait.until(
             EC.presence_of_element_located(self.VIDEO)
         )
-        # חכה שהוידאו יטען
         for i in range(10):
             ready = self.driver.execute_script(
                 "return document.getElementById('video').readyState >= 2"
@@ -59,7 +55,7 @@ class VideoPage(BasePage):
         )
 
     def add_scroll_content(self):
-        """הוסף תוכן כדי שיהיה אפשר לגלול"""
+        """add content"""
         self.driver.execute_script("""
             const content = document.createElement('div');
             content.id = 'scroll-content';
@@ -71,17 +67,17 @@ class VideoPage(BasePage):
         time.sleep(0.5)
 
     def scroll_to_position(self, y_position):
-        """גלול למיקום מסוים"""
+        """scroll to position"""
         self.driver.execute_script(f"window.scrollTo(0, {y_position})")
         time.sleep(0.5)
 
-    def scroll_to_video(self):
-        """גלול עד שהוידאו נראה"""
-        self.driver.execute_script(
-            "document.getElementById('video').scrollIntoView()"
-        )
-        time.sleep(0.5)
+    def fail_with_screenshot(self, screenshot_name, logger):
+        screenshots_dir = os.path.join(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')), "reports", "screenshots")
+        timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+        path = os.path.join(screenshots_dir, f"{screenshot_name}_{timestamp}.png")
+        self.driver.save_screenshot(path)
+        logger.error(f"❌ 'failed'. Screenshot saved to: {path}")
+        raise AssertionError(f"failed. Screenshot: {path}")
 
-    def get_scroll_position(self):
-        """קבל מיקום גלילה נוכחי"""
-        return self.driver.execute_script("return window.pageYOffset")
+
+
