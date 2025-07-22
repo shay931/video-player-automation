@@ -3,6 +3,7 @@ pipeline {
 
     environment {
         PROJECT_DIR = "${WORKSPACE}"
+        PROJECT_ROOT = "${WORKSPACE}"  // ← לפייתון
     }
 
     stages {
@@ -68,9 +69,8 @@ pipeline {
     post {
         always {
             archiveArtifacts artifacts: '*.html, *.xml', allowEmptyArchive: false
+            archiveArtifacts artifacts: 'reports/**', allowEmptyArchive: true  // ← הוספה כאן
             junit 'results_*.xml'
-
-           
         }
     }
 }
