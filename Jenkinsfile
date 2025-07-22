@@ -37,12 +37,23 @@ pipeline {
             }
         }
 
-        stage('Run Tests') {
+        stage('Run Regular Tests') {
             steps {
                 bat """
                 cd %PROJECT_DIR%
                 call venv\\Scripts\\activate.bat
-                call pytest tests/ --html=report.html --junitxml=results.xml
+                call pytest tests/test_api_positive.py tests/test_api_negative.py --html=report_api.html --junitxml=results_api.xml
+                """
+            }
+        }
+
+        stage('Run Parallel Tests') {
+            steps {
+                bat """
+                cd %PROJECT_DIR%
+                call venv\\Scripts\\activate.bat
+                call pip install pytest-xdist
+                call pytest tests/test_video.py -n auto --html=report_video.html --junitxml=results_video.xml
                 """
             }
         }
@@ -56,13 +67,14 @@ pipeline {
 
     post {
         always {
-            archiveArtifacts artifacts: 'report.html', allowEmptyArchive: false
-            junit 'results.xml'
+            archiveArtifacts artifacts: '*.html, *.xml', allowEmptyArchive: false
+            junit 'results_*.xml'
 
+            // אפשר רק אם הפלאגין מותקן
             publishHTML(target: [
                 reportDir: '.',
-                reportFiles: 'report.html',
-                reportName: 'HTML Report'
+                reportFiles: 'report_api.html,report_video.html',
+                reportName: 'HTML Test Reports'
             ])
         }
     }
