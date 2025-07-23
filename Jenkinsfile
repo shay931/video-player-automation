@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         PROJECT_DIR = "${WORKSPACE}"
-        PROJECT_ROOT = "${WORKSPACE}"  // ← לפייתון
+        PROJECT_ROOT = "${WORKSPACE}"
     }
 
     stages {
@@ -43,6 +43,7 @@ pipeline {
                 bat """
                 cd %PROJECT_DIR%
                 call venv\\Scripts\\activate.bat
+                set PROJECT_ROOT=%PROJECT_ROOT%
                 call pytest tests/test_api_positive.py tests/test_api_negative.py --html=report_api.html --junitxml=results_api.xml
                 """
             }
@@ -53,6 +54,7 @@ pipeline {
                 bat """
                 cd %PROJECT_DIR%
                 call venv\\Scripts\\activate.bat
+                set PROJECT_ROOT=%PROJECT_ROOT%
                 call pip install pytest-xdist
                 call pytest tests/test_video.py -n auto --html=report_video.html --junitxml=results_video.xml
                 """
@@ -68,8 +70,7 @@ pipeline {
 
     post {
         always {
-            archiveArtifacts artifacts: '*.html, *.xml', allowEmptyArchive: false
-            archiveArtifacts artifacts: 'reports/**', allowEmptyArchive: true  // ← הוספה כאן
+            archiveArtifacts artifacts: '*.html, *.xml, reports/logs/*.log, reports/screenshots/*.png', allowEmptyArchive: true
             junit 'results_*.xml'
         }
     }
