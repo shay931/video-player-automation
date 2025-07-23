@@ -1,0 +1,30 @@
+2025-07-23 04:47:11,407 - INFO - Logger initialized.
+2025-07-23 04:47:11,681 - INFO - Step 1: Send play event to API
+2025-07-23 04:47:11,710 - INFO - Step 2: Validate response status
+2025-07-23 04:47:11,710 - INFO -  passed Status code: 200
+2025-07-23 04:47:11,711 - INFO - Step 3: Validate response body
+2025-07-23 04:47:11,711 - INFO -  passed Response body: {'ok': True}
+2025-07-23 04:47:11,714 - INFO - Step 1: Send pause event
+2025-07-23 04:47:11,719 - INFO - Step 2: Validate response
+2025-07-23 04:47:11,719 - INFO -    passed Pause event sent successfully: {'ok': True}
+2025-07-23 04:47:11,723 - INFO - Step 1: Send seeked event
+2025-07-23 04:47:11,728 - INFO - Step 2: Validate response
+2025-07-23 04:47:11,728 - INFO -    passed Seeked event sent successfully: {'ok': True}
+2025-07-23 04:47:11,730 - INFO - Step 1: Send scroll event
+2025-07-23 04:47:11,734 - INFO - Step 2: Validate response
+2025-07-23 04:47:11,734 - INFO -    passed Scroll event sent successfully: {'ok': True}
+2025-07-23 04:47:11,736 - INFO - Step 1: Create complete event structure
+2025-07-23 04:47:11,736 - INFO -    Event data: {'userId': 'user-123', 'type': 'play', 'videoTime': 12.345, 'timestamp': '2025-07-21T19:30:45.123Z'}
+2025-07-23 04:47:11,737 - INFO - Step 2: Send event
+2025-07-23 04:47:11,741 - INFO - Step 3: Validate response
+2025-07-23 04:47:11,741 - INFO -    passed Complete event accepted: {'ok': True}
+2025-07-23 04:47:11,745 - INFO - Step 1: Test various video times
+2025-07-23 04:47:11,746 - INFO -    1. Testing time: 0.0s
+2025-07-23 04:47:11,750 - INFO -  passed Event sent with time 0.0s
+2025-07-23 04:47:11,750 - INFO -    2. Testing time: 0.5s
+2025-07-23 04:47:11,753 - INFO -  passed Event sent with time 0.5s
+2025-07-23 04:47:11,753 - INFO -    3. Testing time: 3.0s
+2025-07-23 04:47:11,757 - INFO -  passed Event sent with time 3.0s
+2025-07-23 04:47:11,760 - INFO - Step 1: Send 10 events rapidly
+2025-07-23 04:47:11,782 - INFO - Step 2: Validate all events sent
+2025-07-23 04:47:11,782 - INFO -  passed  All 6 events sent successfully

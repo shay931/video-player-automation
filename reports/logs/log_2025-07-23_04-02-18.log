@@ -1,0 +1,5 @@
+2025-07-23 04:02:19,229 - INFO - Step 1: Send play event to API
+2025-07-23 04:02:19,247 - INFO - Step 2: Validate response status
+2025-07-23 04:02:19,248 - INFO -  passed Status code: 200
+2025-07-23 04:02:19,248 - INFO - Step 3: Validate response body
+2025-07-23 04:02:19,248 - INFO -  passed Response body: {'ok': True}

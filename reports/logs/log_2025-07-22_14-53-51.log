@@ -1,8 +1,0 @@
-2025-07-22 14:53:53,631 - INFO - Setting up Chrome driver...
-2025-07-22 14:53:53,635 - INFO - ====== WebDriver manager ======
-2025-07-22 14:53:54,858 - INFO - Get LATEST chromedriver version for google-chrome
-2025-07-22 14:53:56,026 - INFO - Get LATEST chromedriver version for google-chrome
-2025-07-22 14:53:57,175 - INFO - Driver [C:\Users\Home\.wdm\drivers\chromedriver\win64\138.0.7204.157\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache
-2025-07-22 14:53:57,176 - INFO - Chrome driver path: C:\Users\Home\.wdm\drivers\chromedriver\win64\138.0.7204.157\chromedriver-win32/chromedriver.exe
-2025-07-22 14:54:20,597 - INFO - [CHROME] Step 1: Click play button
-2025-07-22 14:54:26,975 - INFO - Closing chrome driver...

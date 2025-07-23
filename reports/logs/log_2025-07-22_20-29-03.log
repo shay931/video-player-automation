@@ -1,4 +1,0 @@
-2025-07-22 20:29:03,586 - INFO - Step 1: Create event without userId
-2025-07-22 20:29:03,586 - INFO - Step 2: Send invalid event
-2025-07-22 20:29:03,595 - INFO - Step 3: Validate server response
-2025-07-22 20:29:03,595 - WARNING -    Server accepts missing userId: 200

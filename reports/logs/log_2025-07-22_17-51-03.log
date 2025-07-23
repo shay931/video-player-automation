@@ -1,8 +1,0 @@
-2025-07-22 17:51:06,272 - INFO - Setting up Chrome driver...
-2025-07-22 17:51:06,272 - INFO - ====== WebDriver manager ======
-2025-07-22 17:51:08,274 - INFO - Get LATEST chromedriver version for google-chrome
-2025-07-22 17:51:08,305 - ERROR - Failed to setup chrome: Could not reach host. Are you offline?
-2025-07-22 17:51:09,209 - INFO - Setting up Firefox driver...
-2025-07-22 17:51:09,213 - INFO - ====== WebDriver manager ======
-2025-07-22 17:51:11,278 - INFO - Get LATEST geckodriver version for 140.0 firefox
-2025-07-22 17:51:11,309 - ERROR - Failed to setup firefox: Could not reach host. Are you offline?

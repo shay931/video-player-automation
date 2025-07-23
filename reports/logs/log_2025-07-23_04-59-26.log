@@ -1,0 +1,32 @@
+2025-07-23 04:59:26,085 - INFO - Logger initialized.
+2025-07-23 04:59:26,410 - INFO - Step 1: Create event without userId
+2025-07-23 04:59:26,411 - INFO - Step 2: Send invalid event
+2025-07-23 04:59:26,420 - INFO - Step 3: Validate server response
+2025-07-23 04:59:26,420 - WARNING -    Server accepts missing userId: 200
+2025-07-23 04:59:26,422 - INFO - Step 1: Create event without type
+2025-07-23 04:59:26,423 - INFO - Step 2: Send and validate
+2025-07-23 04:59:26,427 - WARNING -    Missing type response: 200
+2025-07-23 04:59:26,429 - INFO - Testing missing videoTime
+2025-07-23 04:59:26,435 - WARNING -    Missing videoTime response: 200
+2025-07-23 04:59:26,437 - INFO - Testing missing timestamp
+2025-07-23 04:59:26,440 - WARNING -    Missing timestamp response: 200
+2025-07-23 04:59:26,443 - INFO - Testing empty payload
+2025-07-23 04:59:26,445 - WARNING -    Empty payload response: 200
+2025-07-23 04:59:26,448 - INFO - Testing null values
+2025-07-23 04:59:26,452 - WARNING -    Null values response: 200
+2025-07-23 04:59:26,454 - INFO - Testing wrong type for videoTime
+2025-07-23 04:59:26,457 - WARNING -    Wrong videoTime type response: 200
+2025-07-23 04:59:26,459 - INFO - Testing negative videoTime
+2025-07-23 04:59:26,462 - WARNING -    Negative videoTime response: 200
+2025-07-23 04:59:26,464 - INFO - Testing invalid event type
+2025-07-23 04:59:26,469 - WARNING -    Invalid event type response: 200
+2025-07-23 04:59:26,472 - INFO - Testing malformed timestamp
+2025-07-23 04:59:26,475 - WARNING -    Malformed timestamp response: 200
+2025-07-23 04:59:26,478 - INFO - Testing extra fields
+2025-07-23 04:59:26,482 - INFO -    Extra fields response: 200
+2025-07-23 04:59:26,482 - INFO -    Server accepts extra fields: True
+2025-07-23 04:59:26,485 - INFO - Testing wrong content type
+2025-07-23 04:59:26,489 - WARNING -    Wrong content type response: 200
+2025-07-23 04:59:26,491 - INFO - Testing special characters
+2025-07-23 04:59:26,495 - INFO -    Special characters response: 200
+2025-07-23 04:59:26,495 - INFO -     Server handles special characters safely
