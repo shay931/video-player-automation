@@ -24,12 +24,12 @@ class TestAPIPositive:
 
         test_logger.info("Step 2: Validate response status")
         assert response.status_code == 200, f"Failed: {response.text}"
-        test_logger.info(f"   ✅ passed Status code: {response.status_code}")
+        test_logger.info(f" passed Status code: {response.status_code}")
 
         test_logger.info("Step 3: Validate response body")
         body = response.json()
         assert body.get('ok') == True
-        test_logger.info(f"   ✅passed Response body: {body}")
+        test_logger.info(f" passed Response body: {body}")
 
     def test_send_pause_event(self, test_logger):
         """Test sending valid pause event"""
@@ -43,7 +43,7 @@ class TestAPIPositive:
         assert response.status_code == 200
         body = response.json()
         assert body.get('ok') == True
-        test_logger.info(f"   ✅passed Pause event sent successfully: {body}")
+        test_logger.info(f"   passed Pause event sent successfully: {body}")
 
     def test_send_seeked_event(self, test_logger):
         """Test sending valid seeked event"""
@@ -57,7 +57,7 @@ class TestAPIPositive:
         assert response.status_code == 200
         body = response.json()
         assert body.get('ok') == True
-        test_logger.info(f"   ✅passed Seeked event sent successfully: {body}")
+        test_logger.info(f"   passed Seeked event sent successfully: {body}")
 
     def test_send_scroll_event(self, test_logger):
         """Test sending valid scroll event"""
@@ -71,7 +71,7 @@ class TestAPIPositive:
         assert response.status_code == 200
         body = response.json()
         assert body.get('ok') == True
-        test_logger.info(f"   ✅passed Scroll event sent successfully: {body}")
+        test_logger.info(f"   passed Scroll event sent successfully: {body}")
 
     def test_all_required_fields(self, test_logger):
         """Test event with all required fields"""
@@ -91,7 +91,7 @@ class TestAPIPositive:
         assert response.status_code == 200
         body = response.json()
         assert body.get('ok') == True
-        test_logger.info(f"   ✅passed Complete event accepted: {body}")
+        test_logger.info(f"   passed Complete event accepted: {body}")
 
 
 
@@ -108,7 +108,7 @@ class TestAPIPositive:
             )
 
             assert response.status_code == 200
-            test_logger.info(f" passed     ✅ Event sent with time {video_time}s")
+            test_logger.info(f" passed Event sent with time {video_time}s")
 
     def test_rapid_events(self, test_logger):
         """Test sending multiple events rapidly"""
@@ -126,4 +126,4 @@ class TestAPIPositive:
 
         test_logger.info(f"Step 2: Validate all events sent")
         assert success_count == 6, f"Only {success_count}/10 events succeeded"
-        test_logger.info(f" passed  ✅ All 10 events sent successfully")
+        test_logger.info(f" passed  All 6 events sent successfully")

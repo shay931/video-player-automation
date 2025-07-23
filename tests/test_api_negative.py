@@ -181,4 +181,4 @@ class TestAPINegative:
 
         response = self.api.send_custom_event(event_data)
         test_logger.info(f"   Special characters response: {response.status_code}")
-        test_logger.info("   ✅ Server handles special characters safely")
+        test_logger.info("    Server handles special characters safely")

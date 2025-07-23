@@ -104,7 +104,7 @@ def setup_driver(request,test_logger):
 class TestVideoPlayer:
 
     def test_play_button(self, setup_driver,test_logger):
-        """בדיקת כפתור Play"""
+        """button Play"""
         driver, page, browser = setup_driver
 
         test_logger.info(f"[{browser.upper()}] Step 1: Click play button")
@@ -119,12 +119,12 @@ class TestVideoPlayer:
             page.fail_with_screenshot(f"{browser}] video not playing" , test_logger)
 
         # assert is_playing, f"{browser}video not play"
-        test_logger.info(f"[{browser.upper()}] ✅ Video is playing: {is_playing}")
+        test_logger.info(f"[{browser.upper()}] passed Video is playing: {is_playing}")
 
         test_logger.info(f"[{browser.upper()}] Step 4: Check play events")
         events = get_events(driver, 'play')
         assert len(events) > 0, f"{browser}not event play"
-        test_logger.info(f"[{browser.upper()}] ✅ Found {len(events)} play events")
+        test_logger.info(f"[{browser.upper()}] passed Found {len(events)} play events")
 
         test_logger.info(f"[{browser.upper()}] Step 5: Validate event structure")
         event = events[0]
@@ -132,7 +132,7 @@ class TestVideoPlayer:
         assert event['type'] == 'play'
         assert 'videoTime' in event
         assert 'timestamp' in event
-        test_logger.info(f"[{browser.upper()}] ✅ passed play movie vent structure valid: {event}")
+        test_logger.info(f"[{browser.upper()}]  passed play movie vent structure valid: {event}")
 
     def test_pause_button(self, setup_driver,test_logger):
         """button Pause"""
@@ -155,7 +155,7 @@ class TestVideoPlayer:
             page.fail_with_screenshot(f"{browser}] video not paused" , test_logger)
 
 
-        test_logger.info(f"[{browser.upper()}] ✅ Video is paused: {is_paused}")
+        test_logger.info(f"[{browser.upper()}] passed Video is paused: {is_paused}")
 
         test_logger.info(f"[{browser.upper()}] Step 5: Check pause events")
         events = get_events(driver, 'pause')
@@ -172,7 +172,7 @@ class TestVideoPlayer:
         assert event['userId'] == 'user-123'
         assert 'videoTime' in event
         assert 'timestamp' in event
-        test_logger.info(f"[{browser.upper()}] ✅ passed test pause button")
+        test_logger.info(f"[{browser.upper()}]  passed test pause button")
 
     def test_seek_control(self, setup_driver,test_logger):
         """video Seek"""
@@ -198,7 +198,7 @@ class TestVideoPlayer:
             page.fail_with_screenshot(f"{browser}] video not seek" , test_logger)
 
 
-        test_logger.info(f"[{browser.upper()}] ✅ Seeked to {current_time:.1f}s")
+        test_logger.info(f"[{browser.upper()}] passed Seeked to {current_time:.1f}s")
 
         test_logger.info(f"[{browser.upper()}] Step 5: Check seeked events")
         events = get_events(driver, 'seeked')
@@ -208,7 +208,7 @@ class TestVideoPlayer:
         assert event['userId'] == 'user-123'
         assert event['type'] == 'seeked'
         assert 'videoTime' in event
-        test_logger.info(f"[{browser.upper()}] ✅ passed Seeked event valid: {event}")
+        test_logger.info(f"[{browser.upper()}]  passed Seeked event valid: {event}")
 
     def test_scroll_event(self, setup_driver,test_logger):
         """event Scroll"""
@@ -247,4 +247,4 @@ class TestVideoPlayer:
         assert event['type'] == 'scroll'
         assert 'videoTime' in event
         assert 'timestamp' in event
-        test_logger.info(f"[{browser.upper()}] ✅ passed Scroll event valid: {event}")
+        test_logger.info(f"[{browser.upper()}] passed Scroll event valid: {event}")
