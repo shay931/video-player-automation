@@ -59,6 +59,14 @@ pipeline {
             }
         }
 
+        stage('Copy Reports to Project Reports Folder') {
+            steps {
+                bat """
+                xcopy /E /Y /I reports\\* video-player-automation\\reports\\
+                """
+            }
+        }
+
         stage('Stop Backend Server') {
             steps {
                 bat 'taskkill /F /IM node.exe || exit 0'
@@ -68,7 +76,7 @@ pipeline {
 
     post {
         always {
-            archiveArtifacts artifacts: 'report*.html, results_*.xml, reports/logs/*.log', allowEmptyArchive: true
+            archiveArtifacts artifacts: 'report*.html, results_*.xml, video-player-automation/reports/logs/*.log', allowEmptyArchive: true
             junit 'results_*.xml'
         }
     }
