@@ -2,6 +2,7 @@ pipeline {
     agent any
 
     environment {
+        PROJECT_DIR = "${WORKSPACE}"
         PROJECT_ROOT = "${WORKSPACE}"
     }
 
@@ -9,7 +10,7 @@ pipeline {
         stage('Setup Python Env') {
             steps {
                 bat """
-                cd %PROJECT_ROOT%
+                cd %PROJECT_DIR%
                 python -m venv venv
                 call venv\\Scripts\\activate.bat
                 call python -m pip install --upgrade pip
@@ -21,7 +22,7 @@ pipeline {
         stage('Install Node Modules') {
             steps {
                 bat """
-                cd %PROJECT_ROOT%\\server
+                cd %PROJECT_DIR%\\server
                 call npm install
                 """
             }
@@ -30,7 +31,7 @@ pipeline {
         stage('Start Backend Server') {
             steps {
                 bat """
-                cd %PROJECT_ROOT%\\server
+                cd %PROJECT_DIR%\\server
                 start "" cmd /c "npm start"
                 ping 127.0.0.1 -n 6 > nul
                 """
@@ -40,7 +41,7 @@ pipeline {
         stage('Run Regular Tests') {
             steps {
                 bat """
-                cd %PROJECT_ROOT%
+                cd %PROJECT_DIR%
                 call venv\\Scripts\\activate.bat
                 set PROJECT_ROOT=%PROJECT_ROOT%
                 call pytest tests/test_api_positive.py tests/test_api_negative.py --html=report_api.html --junitxml=results_api.xml
@@ -51,18 +52,11 @@ pipeline {
         stage('Run Parallel Tests') {
             steps {
                 bat """
-                cd %PROJECT_ROOT%
+                cd %PROJECT_DIR%
                 call venv\\Scripts\\activate.bat
                 set PROJECT_ROOT=%PROJECT_ROOT%
+                call pip install pytest-xdist
                 call pytest tests/test_video.py -n auto --html=report_video.html --junitxml=results_video.xml
-                """
-            }
-        }
-
-        stage('Copy Reports to Project Reports Folder') {
-            steps {
-                bat """
-                xcopy /E /Y /I reports\\* video-player-automation\\reports\\
                 """
             }
         }
@@ -76,7 +70,7 @@ pipeline {
 
     post {
         always {
-            archiveArtifacts artifacts: 'report*.html, results_*.xml, video-player-automation/reports/logs/*.log', allowEmptyArchive: true
+            archiveArtifacts artifacts: '*.html, *.xml, reports/logs/*.log, reports/screenshots/*.png', allowEmptyArchive: true
             junit 'results_*.xml'
         }
     }
